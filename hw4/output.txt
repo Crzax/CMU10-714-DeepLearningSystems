@@ -1,0 +1,3985 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.12, pytest-8.4.2, pluggy-1.6.0 -- /usr/bin/python3
+cachedir: .pytest_cache
+rootdir: /content/drive/MyDrive/10714/hw4
+plugins: langsmith-0.4.58, typeguard-4.4.4, anyio-4.12.0
+collecting ... collected 1803 items / 1685 deselected / 118 selected
+
+tests/hw4/test_nd_backend.py::test_ewise_fn[cpu-shape0-divide] PASSED    [  0%]
+tests/hw4/test_nd_backend.py::test_ewise_fn[cpu-shape0-subtract] PASSED  [  1%]
+tests/hw4/test_nd_backend.py::test_ewise_fn[cpu-shape1-divide] PASSED    [  2%]
+tests/hw4/test_nd_backend.py::test_ewise_fn[cpu-shape1-subtract] PASSED  [  3%]
+tests/hw4/test_nd_backend.py::test_ewise_fn[cuda-shape0-divide] PASSED   [  4%]
+tests/hw4/test_nd_backend.py::test_ewise_fn[cuda-shape0-subtract] PASSED [  5%]
+tests/hw4/test_nd_backend.py::test_ewise_fn[cuda-shape1-divide] PASSED   [  5%]
+tests/hw4/test_nd_backend.py::test_ewise_fn[cuda-shape1-subtract] PASSED [  6%]
+tests/hw4/test_nd_backend.py::test_scalar_fn[cpu-shape0-divide] PASSED   [  7%]
+tests/hw4/test_nd_backend.py::test_scalar_fn[cpu-shape0-subtract] PASSED [  8%]
+tests/hw4/test_nd_backend.py::test_scalar_fn[cpu-shape1-divide] PASSED   [  9%]
+tests/hw4/test_nd_backend.py::test_scalar_fn[cpu-shape1-subtract] PASSED [ 10%]
+tests/hw4/test_nd_backend.py::test_scalar_fn[cuda-shape0-divide] PASSED  [ 11%]
+tests/hw4/test_nd_backend.py::test_scalar_fn[cuda-shape0-subtract] PASSED [ 11%]
+tests/hw4/test_nd_backend.py::test_scalar_fn[cuda-shape1-divide] PASSED  [ 12%]
+tests/hw4/test_nd_backend.py::test_scalar_fn[cuda-shape1-subtract] PASSED [ 13%]
+tests/hw4/test_nd_backend.py::test_matmul[cpu-16-16-16] PASSED           [ 14%]
+tests/hw4/test_nd_backend.py::test_matmul[cpu-8-8-8] PASSED              [ 15%]
+tests/hw4/test_nd_backend.py::test_matmul[cpu-1-2-3] PASSED              [ 16%]
+tests/hw4/test_nd_backend.py::test_matmul[cpu-3-4-5] PASSED              [ 16%]
+tests/hw4/test_nd_backend.py::test_matmul[cpu-5-4-3] PASSED              [ 17%]
+tests/hw4/test_nd_backend.py::test_matmul[cpu-16-16-32] PASSED           [ 18%]
+tests/hw4/test_nd_backend.py::test_matmul[cpu-64-64-64] PASSED           [ 19%]
+tests/hw4/test_nd_backend.py::test_matmul[cpu-72-72-72] PASSED           [ 20%]
+tests/hw4/test_nd_backend.py::test_matmul[cpu-72-73-74] PASSED           [ 21%]
+tests/hw4/test_nd_backend.py::test_matmul[cpu-74-73-72] PASSED           [ 22%]
+tests/hw4/test_nd_backend.py::test_matmul[cpu-128-128-128] PASSED        [ 22%]
+tests/hw4/test_nd_backend.py::test_matmul[cuda-16-16-16] PASSED          [ 23%]
+tests/hw4/test_nd_backend.py::test_matmul[cuda-8-8-8] PASSED             [ 24%]
+tests/hw4/test_nd_backend.py::test_matmul[cuda-1-2-3] PASSED             [ 25%]
+tests/hw4/test_nd_backend.py::test_matmul[cuda-3-4-5] PASSED             [ 26%]
+tests/hw4/test_nd_backend.py::test_matmul[cuda-5-4-3] PASSED             [ 27%]
+tests/hw4/test_nd_backend.py::test_matmul[cuda-16-16-32] PASSED          [ 27%]
+tests/hw4/test_nd_backend.py::test_matmul[cuda-64-64-64] PASSED          [ 28%]
+tests/hw4/test_nd_backend.py::test_matmul[cuda-72-72-72] PASSED          [ 29%]
+tests/hw4/test_nd_backend.py::test_matmul[cuda-72-73-74] PASSED          [ 30%]
+tests/hw4/test_nd_backend.py::test_matmul[cuda-74-73-72] PASSED          [ 31%]
+tests/hw4/test_nd_backend.py::test_matmul[cuda-128-128-128] PASSED       [ 32%]
+tests/hw4/test_nd_backend.py::test_power[cpu-shape0] PASSED              [ 33%]
+tests/hw4/test_nd_backend.py::test_power[cpu-shape1] PASSED              [ 33%]
+tests/hw4/test_nd_backend.py::test_power[cuda-shape0] PASSED             [ 34%]
+tests/hw4/test_nd_backend.py::test_power[cuda-shape1] PASSED             [ 35%]
+tests/hw4/test_nd_backend.py::test_log[cpu-shape0] PASSED                [ 36%]
+tests/hw4/test_nd_backend.py::test_log[cpu-shape1] PASSED                [ 37%]
+tests/hw4/test_nd_backend.py::test_log[cuda-shape0] PASSED               [ 38%]
+tests/hw4/test_nd_backend.py::test_log[cuda-shape1] PASSED               [ 38%]
+tests/hw4/test_nd_backend.py::test_exp[cpu-shape0] PASSED                [ 39%]
+tests/hw4/test_nd_backend.py::test_exp[cpu-shape1] PASSED                [ 40%]
+tests/hw4/test_nd_backend.py::test_exp[cuda-shape0] PASSED               [ 41%]
+tests/hw4/test_nd_backend.py::test_exp[cuda-shape1] PASSED               [ 42%]
+tests/hw4/test_nd_backend.py::test_relu[cpu-shape0] PASSED               [ 43%]
+tests/hw4/test_nd_backend.py::test_relu[cpu-shape1] PASSED               [ 44%]
+tests/hw4/test_nd_backend.py::test_relu[cuda-shape0] PASSED              [ 44%]
+tests/hw4/test_nd_backend.py::test_relu[cuda-shape1] PASSED              [ 45%]
+tests/hw4/test_nd_backend.py::test_tanh[cpu-shape0] PASSED               [ 46%]
+tests/hw4/test_nd_backend.py::test_tanh[cpu-shape1] PASSED               [ 47%]
+tests/hw4/test_nd_backend.py::test_tanh[cuda-shape0] PASSED              [ 48%]
+tests/hw4/test_nd_backend.py::test_tanh[cuda-shape1] PASSED              [ 49%]
+tests/hw4/test_nd_backend.py::test_tanh_backward[cpu-shape0] FAILED      [ 50%]
+tests/hw4/test_nd_backend.py::test_tanh_backward[cpu-shape1] FAILED      [ 50%]
+tests/hw4/test_nd_backend.py::test_tanh_backward[cuda-shape0] FAILED     [ 51%]
+tests/hw4/test_nd_backend.py::test_tanh_backward[cuda-shape1] FAILED     [ 52%]
+tests/hw4/test_nd_backend.py::test_stack[cpu-shape0-0-1] FAILED          [ 53%]
+tests/hw4/test_nd_backend.py::test_stack[cpu-shape1-0-2] FAILED          [ 54%]
+tests/hw4/test_nd_backend.py::test_stack[cpu-shape2-2-5] FAILED          [ 55%]
+tests/hw4/test_nd_backend.py::test_stack[cuda-shape0-0-1] FAILED         [ 55%]
+tests/hw4/test_nd_backend.py::test_stack[cuda-shape1-0-2] FAILED         [ 56%]
+tests/hw4/test_nd_backend.py::test_stack[cuda-shape2-2-5] FAILED         [ 57%]
+tests/hw4/test_nd_backend.py::test_stack_backward[cpu-shape0-0-1] FAILED [ 58%]
+tests/hw4/test_nd_backend.py::test_stack_backward[cpu-shape1-0-2] FAILED [ 59%]
+tests/hw4/test_nd_backend.py::test_stack_backward[cpu-shape2-2-5] FAILED [ 60%]
+tests/hw4/test_nd_backend.py::test_stack_backward[cuda-shape0-0-1] FAILED [ 61%]
+tests/hw4/test_nd_backend.py::test_stack_backward[cuda-shape1-0-2] FAILED [ 61%]
+tests/hw4/test_nd_backend.py::test_stack_backward[cuda-shape2-2-5] FAILED [ 62%]
+tests/hw4/test_nd_backend.py::test_summation[cpu-shape0-None] PASSED     [ 63%]
+tests/hw4/test_nd_backend.py::test_summation[cpu-shape1-0] PASSED        [ 64%]
+tests/hw4/test_nd_backend.py::test_summation[cpu-shape2-1] PASSED        [ 65%]
+tests/hw4/test_nd_backend.py::test_summation[cpu-shape3-2] PASSED        [ 66%]
+tests/hw4/test_nd_backend.py::test_summation[cuda-shape0-None] PASSED    [ 66%]
+tests/hw4/test_nd_backend.py::test_summation[cuda-shape1-0] PASSED       [ 67%]
+tests/hw4/test_nd_backend.py::test_summation[cuda-shape2-1] PASSED       [ 68%]
+tests/hw4/test_nd_backend.py::test_summation[cuda-shape3-2] PASSED       [ 69%]
+tests/hw4/test_nd_backend.py::test_summation_backward[cpu-shape0-None] PASSED [ 70%]
+tests/hw4/test_nd_backend.py::test_summation_backward[cpu-shape1-0] FAILED [ 71%]
+tests/hw4/test_nd_backend.py::test_summation_backward[cpu-shape2-1] FAILED [ 72%]
+tests/hw4/test_nd_backend.py::test_summation_backward[cpu-shape3-2] FAILED [ 72%]
+tests/hw4/test_nd_backend.py::test_summation_backward[cuda-shape0-None] PASSED [ 73%]
+tests/hw4/test_nd_backend.py::test_summation_backward[cuda-shape1-0] FAILED [ 74%]
+tests/hw4/test_nd_backend.py::test_summation_backward[cuda-shape2-1] FAILED [ 75%]
+tests/hw4/test_nd_backend.py::test_summation_backward[cuda-shape3-2] FAILED [ 76%]
+tests/hw4/test_nd_backend.py::test_broadcast_to[cpu-shape0-shape_to0] PASSED [ 77%]
+tests/hw4/test_nd_backend.py::test_broadcast_to[cpu-shape1-shape_to1] PASSED [ 77%]
+tests/hw4/test_nd_backend.py::test_broadcast_to[cuda-shape0-shape_to0] PASSED [ 78%]
+tests/hw4/test_nd_backend.py::test_broadcast_to[cuda-shape1-shape_to1] PASSED [ 79%]
+tests/hw4/test_nd_backend.py::test_reshape[cpu-shape0-shape_to0] PASSED  [ 80%]
+tests/hw4/test_nd_backend.py::test_reshape[cpu-shape1-shape_to1] PASSED  [ 81%]
+tests/hw4/test_nd_backend.py::test_reshape[cuda-shape0-shape_to0] PASSED [ 82%]
+tests/hw4/test_nd_backend.py::test_reshape[cuda-shape1-shape_to1] PASSED [ 83%]
+tests/hw4/test_nd_backend.py::test_transpose[cpu-axes0-shape0] FAILED    [ 83%]
+tests/hw4/test_nd_backend.py::test_transpose[cpu-axes0-shape1] FAILED    [ 84%]
+tests/hw4/test_nd_backend.py::test_transpose[cpu-axes1-shape0] FAILED    [ 85%]
+tests/hw4/test_nd_backend.py::test_transpose[cpu-axes1-shape1] FAILED    [ 86%]
+tests/hw4/test_nd_backend.py::test_transpose[cpu-None-shape0] FAILED     [ 87%]
+tests/hw4/test_nd_backend.py::test_transpose[cpu-None-shape1] FAILED     [ 88%]
+tests/hw4/test_nd_backend.py::test_transpose[cuda-axes0-shape0] FAILED   [ 88%]
+tests/hw4/test_nd_backend.py::test_transpose[cuda-axes0-shape1] FAILED   [ 89%]
+tests/hw4/test_nd_backend.py::test_transpose[cuda-axes1-shape0] FAILED   [ 90%]
+tests/hw4/test_nd_backend.py::test_transpose[cuda-axes1-shape1] FAILED   [ 91%]
+tests/hw4/test_nd_backend.py::test_transpose[cuda-None-shape0] FAILED    [ 92%]
+tests/hw4/test_nd_backend.py::test_transpose[cuda-None-shape1] FAILED    [ 93%]
+tests/hw4/test_nd_backend.py::test_logsumexp[cpu-shape0-None] FAILED     [ 94%]
+tests/hw4/test_nd_backend.py::test_logsumexp[cpu-shape1-0] FAILED        [ 94%]
+tests/hw4/test_nd_backend.py::test_logsumexp[cpu-shape2-1] FAILED        [ 95%]
+tests/hw4/test_nd_backend.py::test_logsumexp[cpu-shape3-2] FAILED        [ 96%]
+tests/hw4/test_nd_backend.py::test_logsumexp[cuda-shape0-None] FAILED    [ 97%]
+tests/hw4/test_nd_backend.py::test_logsumexp[cuda-shape1-0] FAILED       [ 98%]
+tests/hw4/test_nd_backend.py::test_logsumexp[cuda-shape2-1] FAILED       [ 99%]
+tests/hw4/test_nd_backend.py::test_logsumexp[cuda-shape3-2] FAILED       [100%]
+
+=================================== FAILURES ===================================
+________________________ test_tanh_backward[cpu-shape0] ________________________
+
+shape = (1, 1, 1), device = cpu()
+
+    @pytest.mark.parametrize("shape", GENERAL_SHAPES)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_tanh_backward(shape, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+>       backward_check(ndl.tanh, A)
+
+A          = needle.Tensor([[[-1.5997132]]])
+_A         = array([[[-1.5997132]]], dtype=float32)
+device     = cpu()
+shape      = (1, 1, 1)
+
+tests/hw4/test_nd_backend.py:142: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/hw4/test_nd_backend.py:28: in backward_check
+    backward_grad = out.op.gradient_as_tuple(ndl.Tensor(c, device=args[0].device), out)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[-1.5997132]]]),)
+        c          = array([[[1.62337831]]])
+        eps        = 1e-05
+        f          = <function tanh at 0x7d01299ec7c0>
+        f1         = np.float64(-1.496144229321173)
+        f2         = np.float64(-1.4961490673655593)
+        i          = 0
+        j          = 0
+        kwargs     = {}
+        num_args   = 1
+        numerical_grad = [array([[[0.24190222]]])]
+        out        = needle.Tensor([[[-0.9216254]]])
+python/needle/autograd.py:67: in gradient_as_tuple
+    output = self.gradient(out_grad, node)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        node       = needle.Tensor([[[-0.9216254]]])
+        out_grad   = needle.Tensor([[[1.6233783]]])
+        self       = <needle.ops.ops_mathematic.Tanh object at 0x7d003ba3ecf0>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Tanh object at 0x7d003ba3ecf0>
+out_grad = needle.Tensor([[[1.6233783]]])
+node = needle.Tensor([[[-0.9216254]]])
+
+    def gradient(self, out_grad, node):
+        ### BEGIN YOUR SOLUTION
+>       return out_grad * (1 - node**2)
+                           ^^^^^^^^^^^
+E       TypeError: unsupported operand type(s) for -: 'int' and 'Tensor'
+
+node       = needle.Tensor([[[-0.9216254]]])
+out_grad   = needle.Tensor([[[1.6233783]]])
+self       = <needle.ops.ops_mathematic.Tanh object at 0x7d003ba3ecf0>
+
+python/needle/ops/ops_mathematic.py:335: TypeError
+________________________ test_tanh_backward[cpu-shape1] ________________________
+
+shape = (4, 5, 6), device = cpu()
+
+    @pytest.mark.parametrize("shape", GENERAL_SHAPES)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_tanh_backward(shape, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+>       backward_check(ndl.tanh, A)
+
+A          = needle.Tensor([[[-0.58456963  0.86539763  0.8150671   0.52470696 -2.4929152
+    0.28299397]
+  [ 0.8119     -1.423022  ...0.8650645  -1.3442827
+    0.07837614]
+  [-0.39979824 -0.046556   -1.3993185   2.621195   -0.13064201
+   -1.2775043 ]]])
+_A         = array([[[-0.58456963,  0.86539763,  0.8150671 ,  0.52470696,
+         -2.4929152 ,  0.28299394],
+        [ 0.8119    ,...614],
+        [-0.39979827, -0.04655599, -1.3993185 ,  2.621195  ,
+         -0.13064201, -1.2775043 ]]], dtype=float32)
+device     = cpu()
+shape      = (4, 5, 6)
+
+tests/hw4/test_nd_backend.py:142: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/hw4/test_nd_backend.py:28: in backward_check
+    backward_grad = out.op.gradient_as_tuple(ndl.Tensor(c, device=args[0].device), out)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[-0.58456963  0.86539763  0.8150671   0.52470696 -2.4929152
+    0.28299397]
+  [ 0.8119     -1.423022 ...8650645  -1.3442827
+    0.07837614]
+  [-0.39979824 -0.046556   -1.3993185   2.621195   -0.13064201
+   -1.2775043 ]]]),)
+        c          = array([[[-0.71145286,  0.96028833, -0.01700081,  0.18537076,
+         -0.92995867,  1.28713895],
+        [-0.69594262,...86222,  0.24258502],
+        [-0.03949696, -0.93104237, -0.55855963, -1.24720461,
+         -1.11490311, -0.52351761]]])
+        eps        = 1e-05
+        f          = <function tanh at 0x7d01299ec7c0>
+        f1         = np.float64(-1.1420759444360495)
+        f2         = np.float64(-1.1420731360687344)
+        i          = 0
+        j          = 119
+        kwargs     = {}
+        num_args   = 1
+        numerical_grad = [array([[[-0.51735192,  0.48938187, -0.00937328,  0.14225534,
+         -0.02494344,  1.18915162],
+        [-0.38370307...1642,  0.24110706],
+        [-0.03384166, -0.92918519, -0.12151853, -0.02601872,
+         -1.09565049, -0.14041837]]])]
+        out        = needle.Tensor([[[-0.5259788   0.69902825  0.67237604  0.48132467 -0.98642457
+    0.27567378]
+  [ 0.6706371  -0.8902277....69885784 -0.87269706
+    0.07821605]
+  [-0.37977633 -0.04652238 -0.88520426  0.98948044 -0.12990381
+   -0.85581857]]])
+python/needle/autograd.py:67: in gradient_as_tuple
+    output = self.gradient(out_grad, node)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        node       = needle.Tensor([[[-0.5259788   0.69902825  0.67237604  0.48132467 -0.98642457
+    0.27567378]
+  [ 0.6706371  -0.8902277....69885784 -0.87269706
+    0.07821605]
+  [-0.37977633 -0.04652238 -0.88520426  0.98948044 -0.12990381
+   -0.85581857]]])
+        out_grad   = needle.Tensor([[[-0.71145284  0.96028835 -0.01700081  0.18537076 -0.92995864
+    1.2871389 ]
+  [-0.69594264 -0.6974334... 0.02099861  1.3598622
+    0.24258502]
+  [-0.03949696 -0.9310424  -0.55855966 -1.2472047  -1.1149031
+   -0.5235176 ]]])
+        self       = <needle.ops.ops_mathematic.Tanh object at 0x7d003ba3f410>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Tanh object at 0x7d003ba3f410>
+out_grad = needle.Tensor([[[-0.71145284  0.96028835 -0.01700081  0.18537076 -0.92995864
+    1.2871389 ]
+  [-0.69594264 -0.6974334... 0.02099861  1.3598622
+    0.24258502]
+  [-0.03949696 -0.9310424  -0.55855966 -1.2472047  -1.1149031
+   -0.5235176 ]]])
+node = needle.Tensor([[[-0.5259788   0.69902825  0.67237604  0.48132467 -0.98642457
+    0.27567378]
+  [ 0.6706371  -0.8902277....69885784 -0.87269706
+    0.07821605]
+  [-0.37977633 -0.04652238 -0.88520426  0.98948044 -0.12990381
+   -0.85581857]]])
+
+    def gradient(self, out_grad, node):
+        ### BEGIN YOUR SOLUTION
+>       return out_grad * (1 - node**2)
+                           ^^^^^^^^^^^
+E       TypeError: unsupported operand type(s) for -: 'int' and 'Tensor'
+
+node       = needle.Tensor([[[-0.5259788   0.69902825  0.67237604  0.48132467 -0.98642457
+    0.27567378]
+  [ 0.6706371  -0.8902277....69885784 -0.87269706
+    0.07821605]
+  [-0.37977633 -0.04652238 -0.88520426  0.98948044 -0.12990381
+   -0.85581857]]])
+out_grad   = needle.Tensor([[[-0.71145284  0.96028835 -0.01700081  0.18537076 -0.92995864
+    1.2871389 ]
+  [-0.69594264 -0.6974334... 0.02099861  1.3598622
+    0.24258502]
+  [-0.03949696 -0.9310424  -0.55855966 -1.2472047  -1.1149031
+   -0.5235176 ]]])
+self       = <needle.ops.ops_mathematic.Tanh object at 0x7d003ba3f410>
+
+python/needle/ops/ops_mathematic.py:335: TypeError
+_______________________ test_tanh_backward[cuda-shape0] ________________________
+
+shape = (1, 1, 1), device = cuda()
+
+    @pytest.mark.parametrize("shape", GENERAL_SHAPES)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_tanh_backward(shape, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+>       backward_check(ndl.tanh, A)
+
+A          = needle.Tensor([[[0.90795034]]])
+_A         = array([[[0.90795034]]], dtype=float32)
+device     = cuda()
+shape      = (1, 1, 1)
+
+tests/hw4/test_nd_backend.py:142: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/hw4/test_nd_backend.py:28: in backward_check
+    backward_grad = out.op.gradient_as_tuple(ndl.Tensor(c, device=args[0].device), out)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[0.90795034]]]),)
+        c          = array([[[1.19146721]]])
+        eps        = 1e-05
+        f          = <function tanh at 0x7d01299ec7c0>
+        f1         = np.float64(0.8580373732455918)
+        f2         = np.float64(0.8580258684949064)
+        i          = 0
+        j          = 0
+        kwargs     = {}
+        num_args   = 1
+        numerical_grad = [array([[[0.57523753]]])]
+        out        = needle.Tensor([[[0.720147]]])
+python/needle/autograd.py:67: in gradient_as_tuple
+    output = self.gradient(out_grad, node)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        node       = needle.Tensor([[[0.720147]]])
+        out_grad   = needle.Tensor([[[1.1914672]]])
+        self       = <needle.ops.ops_mathematic.Tanh object at 0x7d003ba3f560>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Tanh object at 0x7d003ba3f560>
+out_grad = needle.Tensor([[[1.1914672]]]), node = needle.Tensor([[[0.720147]]])
+
+    def gradient(self, out_grad, node):
+        ### BEGIN YOUR SOLUTION
+>       return out_grad * (1 - node**2)
+                           ^^^^^^^^^^^
+E       TypeError: unsupported operand type(s) for -: 'int' and 'Tensor'
+
+node       = needle.Tensor([[[0.720147]]])
+out_grad   = needle.Tensor([[[1.1914672]]])
+self       = <needle.ops.ops_mathematic.Tanh object at 0x7d003ba3f560>
+
+python/needle/ops/ops_mathematic.py:335: TypeError
+_______________________ test_tanh_backward[cuda-shape1] ________________________
+
+shape = (4, 5, 6), device = cuda()
+
+    @pytest.mark.parametrize("shape", GENERAL_SHAPES)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_tanh_backward(shape, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+>       backward_check(ndl.tanh, A)
+
+A          = needle.Tensor([[[ 0.6276671   1.7709465   2.5802875   1.0994289  -0.2560744
+   -0.30351135]
+  [-1.2755342   1.4340128 ...0.41443744  0.13385125
+    0.6493112 ]
+  [-0.8847228  -1.9263881  -1.6778411   0.45559204  0.2922058
+    1.1388148 ]]])
+_A         = array([[[ 0.6276671 ,  1.7709465 ,  2.5802875 ,  1.0994289 ,
+         -0.25607443, -0.30351138],
+        [-1.2755342 ,...12 ],
+        [-0.8847228 , -1.9263881 , -1.6778411 ,  0.455592  ,
+          0.29220578,  1.1388148 ]]], dtype=float32)
+device     = cuda()
+shape      = (4, 5, 6)
+
+tests/hw4/test_nd_backend.py:142: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/hw4/test_nd_backend.py:28: in backward_check
+    backward_grad = out.op.gradient_as_tuple(ndl.Tensor(c, device=args[0].device), out)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[ 0.6276671   1.7709465   2.5802875   1.0994289  -0.2560744
+   -0.30351135]
+  [-1.2755342   1.4340128...41443744  0.13385125
+    0.6493112 ]
+  [-0.8847228  -1.9263881  -1.6778411   0.45559204  0.2922058
+    1.1388148 ]]]),)
+        c          = array([[[-0.95230234, -0.63597503, -0.19050878,  1.35308429,
+         -2.45410143, -0.07941442],
+        [ 0.10208082,...30038, -0.55089105],
+        [ 0.04892026,  2.01325595,  0.27848269,  0.11210785,
+         -0.23827138,  1.09982379]]])
+        eps        = 1e-05
+        f          = <function tanh at 0x7d01299ec7c0>
+        f1         = np.float64(-8.544052887017726)
+        f2         = np.float64(-8.544060294688222)
+        i          = 0
+        j          = 119
+        kwargs     = {}
+        num_args   = 1
+        numerical_grad = [array([[[-0.65843506, -0.07012807, -0.00454208,  0.48793316,
+         -2.30018765, -0.0725404 ],
+        [ 0.02738021...7402, -0.37104302],
+        [ 0.02449335,  0.1619992 ,  0.0365175 ,  0.09171249,
+         -0.2190671 ,  0.37038352]]])]
+        out        = needle.Tensor([[[ 0.5564438   0.94371307  0.9885887   0.8002938  -0.25062016
+   -0.29452267]
+  [-0.8552905   0.892486 ...0.39223394  0.13305758
+    0.5712061 ]
+  [-0.7087774  -0.9584404  -0.9325808   0.4264848   0.2841637
+    0.8140146 ]]])
+python/needle/autograd.py:67: in gradient_as_tuple
+    output = self.gradient(out_grad, node)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        node       = needle.Tensor([[[ 0.5564438   0.94371307  0.9885887   0.8002938  -0.25062016
+   -0.29452267]
+  [-0.8552905   0.892486 ...0.39223394  0.13305758
+    0.5712061 ]
+  [-0.7087774  -0.9584404  -0.9325808   0.4264848   0.2841637
+    0.8140146 ]]])
+        out_grad   = needle.Tensor([[[-0.95230234 -0.63597506 -0.19050878  1.3530843  -2.4541013
+   -0.07941442]
+  [ 0.10208081 -0.42133588...0.34838298 -0.7833004
+   -0.55089104]
+  [ 0.04892026  2.0132558   0.2784827   0.11210785 -0.23827139
+    1.0998238 ]]])
+        self       = <needle.ops.ops_mathematic.Tanh object at 0x7d003ba7e630>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Tanh object at 0x7d003ba7e630>
+out_grad = needle.Tensor([[[-0.95230234 -0.63597506 -0.19050878  1.3530843  -2.4541013
+   -0.07941442]
+  [ 0.10208081 -0.42133588...0.34838298 -0.7833004
+   -0.55089104]
+  [ 0.04892026  2.0132558   0.2784827   0.11210785 -0.23827139
+    1.0998238 ]]])
+node = needle.Tensor([[[ 0.5564438   0.94371307  0.9885887   0.8002938  -0.25062016
+   -0.29452267]
+  [-0.8552905   0.892486 ...0.39223394  0.13305758
+    0.5712061 ]
+  [-0.7087774  -0.9584404  -0.9325808   0.4264848   0.2841637
+    0.8140146 ]]])
+
+    def gradient(self, out_grad, node):
+        ### BEGIN YOUR SOLUTION
+>       return out_grad * (1 - node**2)
+                           ^^^^^^^^^^^
+E       TypeError: unsupported operand type(s) for -: 'int' and 'Tensor'
+
+node       = needle.Tensor([[[ 0.5564438   0.94371307  0.9885887   0.8002938  -0.25062016
+   -0.29452267]
+  [-0.8552905   0.892486 ...0.39223394  0.13305758
+    0.5712061 ]
+  [-0.7087774  -0.9584404  -0.9325808   0.4264848   0.2841637
+    0.8140146 ]]])
+out_grad   = needle.Tensor([[[-0.95230234 -0.63597506 -0.19050878  1.3530843  -2.4541013
+   -0.07941442]
+  [ 0.10208081 -0.42133588...0.34838298 -0.7833004
+   -0.55089104]
+  [ 0.04892026  2.0132558   0.2784827   0.11210785 -0.23827139
+    1.0998238 ]]])
+self       = <needle.ops.ops_mathematic.Tanh object at 0x7d003ba7e630>
+
+python/needle/ops/ops_mathematic.py:335: TypeError
+__________________________ test_stack[cpu-shape0-0-1] __________________________
+
+shape = (5, 5), axis = 0, l = 1, device = cpu()
+
+    @pytest.mark.parametrize("shape, axis, l", STACK_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_stack(shape, axis, l, device):
+        _A = [np.random.randn(*shape).astype(np.float32) for i in range(l)]
+        A = [ndl.Tensor(nd.array(_A[i]), device=device) for i in range(l)]
+        A_t = [torch.Tensor(_A[i]) for i in range(l)]
+>       out = ndl.stack(A, axis=axis)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = [needle.Tensor([[-0.07136466  0.62180406  0.64916927  1.0328673  -0.82423985]
+ [-0.09091089  0.3844313   0.36341754 -0...379   1.2153631  -1.8787898  -0.4840601  -1.4458045 ]
+ [ 0.1112728  -0.8710335   1.7364272   0.6129948   0.6366247 ]])]
+A_t        = [tensor([[-0.0714,  0.6218,  0.6492,  1.0329, -0.8242],
+        [-0.0909,  0.3844,  0.3634, -0.8576, -0.0482],
+       ....7654],
+        [-1.0452,  1.2154, -1.8788, -0.4841, -1.4458],
+        [ 0.1113, -0.8710,  1.7364,  0.6130,  0.6366]])]
+_A         = [array([[-0.07136466,  0.62180406,  0.64916927,  1.0328673 , -0.82423985],
+       [-0.09091089,  0.3844313 ,  0.363417...840601 , -1.4458045 ],
+       [ 0.1112728 , -0.8710335 ,  1.7364272 ,  0.6129948 ,  0.6366247 ]],
+      dtype=float32)]
+axis       = 0
+device     = cpu()
+l          = 1
+shape      = (5, 5)
+
+tests/hw4/test_nd_backend.py:154: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_mathematic.py:377: in stack
+    return Stack(axis)(make_tuple(*args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = [needle.Tensor([[-0.07136466  0.62180406  0.64916927  1.0328673  -0.82423985]
+ [-0.09091089  0.3844313   0.36341754 -0...379   1.2153631  -1.8787898  -0.4840601  -1.4458045 ]
+ [ 0.1112728  -0.8710335   1.7364272   0.6129948   0.6366247 ]])]
+        axis       = 0
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.TensorTuple(needle.Tensor([[-0.07136466  0.62180406  0.64916927  1.0328673  -0.82423985]
+ [-0.09091089  0.3844...   1.2153631  -1.8787898  -0.4840601  -1.4458045 ]
+ [ 0.1112728  -0.8710335   1.7364272   0.6129948   0.6366247 ]]),),)
+        self       = <needle.ops.ops_mathematic.Stack object at 0x7d003c3026c0>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.TensorTuple(needle.Tensor([[-0.07136466  0.62180406  0.64916927  1.0328673  -0.82423985]
+ [-0.09091089  0.3844...   1.2153631  -1.8787898  -0.4840601  -1.4458045 ]
+ [ 0.1112728  -0.8710335   1.7364272   0.6129948   0.6366247 ]]),),)
+        op         = <needle.ops.ops_mathematic.Stack object at 0x7d003c3026c0>
+        tensor     = <[AssertionError('All arrays need to be of the same size!') raised in repr()] Tensor object at 0x7d003c7a47a0>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AssertionError('All arrays need to be of the same size!') raised in repr()] Tensor object at 0x7d003c7a47a0>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Stack object at 0x7d003c3026c0>
+args = (NDArray([[-0.07136466  0.62180406  0.64916927  1.0328673  -0.82423985]
+ [-0.09091089  0.3844313   0.36341754 -0.85764...  -1.8787898  -0.4840601  -1.4458045 ]
+ [ 0.1112728  -0.8710335   1.7364272   0.6129948   0.6366247 ]], device=cpu()),)
+
+    def compute(self, args: TensorTuple) -> Tensor:
+        ### BEGIN YOUR SOLUTION
+        assert len(args) > 0, "Stack needs at least one array!"
+        shape = args[0].size
+        for a in args:
+>         assert a.shape==shape, "All arrays need to be of the same size!"
+                 ^^^^^^^^^^^^^^
+E         AssertionError: All arrays need to be of the same size!
+
+a          = NDArray([[-0.07136466  0.62180406  0.64916927  1.0328673  -0.82423985]
+ [-0.09091089  0.3844313   0.36341754 -0.857642...31  -1.8787898  -0.4840601  -1.4458045 ]
+ [ 0.1112728  -0.8710335   1.7364272   0.6129948   0.6366247 ]], device=cpu())
+args       = (NDArray([[-0.07136466  0.62180406  0.64916927  1.0328673  -0.82423985]
+ [-0.09091089  0.3844313   0.36341754 -0.85764...  -1.8787898  -0.4840601  -1.4458045 ]
+ [ 0.1112728  -0.8710335   1.7364272   0.6129948   0.6366247 ]], device=cpu()),)
+self       = <needle.ops.ops_mathematic.Stack object at 0x7d003c3026c0>
+shape      = 25
+
+python/needle/ops/ops_mathematic.py:358: AssertionError
+__________________________ test_stack[cpu-shape1-0-2] __________________________
+
+shape = (5, 5), axis = 0, l = 2, device = cpu()
+
+    @pytest.mark.parametrize("shape, axis, l", STACK_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_stack(shape, axis, l, device):
+        _A = [np.random.randn(*shape).astype(np.float32) for i in range(l)]
+        A = [ndl.Tensor(nd.array(_A[i]), device=device) for i in range(l)]
+        A_t = [torch.Tensor(_A[i]) for i in range(l)]
+>       out = ndl.stack(A, axis=axis)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = [needle.Tensor([[-0.17882441  1.4526075   0.06863618 -0.0180711  -0.14859328]
+ [-1.0338513  -1.0570263  -0.2118788  -0...055  -2.045614    0.23107018  1.2565722  -0.6088181 ]
+ [-0.48849607 -0.38427642  0.2980011   0.04987274  1.2440314 ]])]
+A_t        = [tensor([[-0.1788,  1.4526,  0.0686, -0.0181, -0.1486],
+        [-1.0339, -1.0570, -0.2119, -0.0361,  1.2204],
+       ....2356],
+        [ 0.2066, -2.0456,  0.2311,  1.2566, -0.6088],
+        [-0.4885, -0.3843,  0.2980,  0.0499,  1.2440]])]
+_A         = [array([[-0.17882441,  1.4526075 ,  0.06863618, -0.0180711 , -0.14859328],
+       [-1.0338513 , -1.0570263 , -0.211878...565722 , -0.6088181 ],
+       [-0.48849607, -0.38427642,  0.2980011 ,  0.04987274,  1.2440314 ]],
+      dtype=float32)]
+axis       = 0
+device     = cpu()
+l          = 2
+shape      = (5, 5)
+
+tests/hw4/test_nd_backend.py:154: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_mathematic.py:377: in stack
+    return Stack(axis)(make_tuple(*args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = [needle.Tensor([[-0.17882441  1.4526075   0.06863618 -0.0180711  -0.14859328]
+ [-1.0338513  -1.0570263  -0.2118788  -0...055  -2.045614    0.23107018  1.2565722  -0.6088181 ]
+ [-0.48849607 -0.38427642  0.2980011   0.04987274  1.2440314 ]])]
+        axis       = 0
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.TensorTuple(needle.Tensor([[-0.17882441  1.4526075   0.06863618 -0.0180711  -0.14859328]
+ [-1.0338513  -1.0570...5  -2.045614    0.23107018  1.2565722  -0.6088181 ]
+ [-0.48849607 -0.38427642  0.2980011   0.04987274  1.2440314 ]])),)
+        self       = <needle.ops.ops_mathematic.Stack object at 0x7d003c302180>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.TensorTuple(needle.Tensor([[-0.17882441  1.4526075   0.06863618 -0.0180711  -0.14859328]
+ [-1.0338513  -1.0570...5  -2.045614    0.23107018  1.2565722  -0.6088181 ]
+ [-0.48849607 -0.38427642  0.2980011   0.04987274  1.2440314 ]])),)
+        op         = <needle.ops.ops_mathematic.Stack object at 0x7d003c302180>
+        tensor     = <[AssertionError('All arrays need to be of the same size!') raised in repr()] Tensor object at 0x7d003ba7d1f0>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AssertionError('All arrays need to be of the same size!') raised in repr()] Tensor object at 0x7d003ba7d1f0>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Stack object at 0x7d003c302180>
+args = (NDArray([[-0.17882441  1.4526075   0.06863618 -0.0180711  -0.14859328]
+ [-1.0338513  -1.0570263  -0.2118788  -0.03613...    0.23107018  1.2565722  -0.6088181 ]
+ [-0.48849607 -0.38427642  0.2980011   0.04987274  1.2440314 ]], device=cpu()))
+
+    def compute(self, args: TensorTuple) -> Tensor:
+        ### BEGIN YOUR SOLUTION
+        assert len(args) > 0, "Stack needs at least one array!"
+        shape = args[0].size
+        for a in args:
+>         assert a.shape==shape, "All arrays need to be of the same size!"
+                 ^^^^^^^^^^^^^^
+E         AssertionError: All arrays need to be of the same size!
+
+a          = NDArray([[-0.17882441  1.4526075   0.06863618 -0.0180711  -0.14859328]
+ [-1.0338513  -1.0570263  -0.2118788  -0.036130...962  0.3781087   0.8597285   0.14698541]
+ [-0.8999567   1.013468    1.8317423  -0.4374538   1.5339066 ]], device=cpu())
+args       = (NDArray([[-0.17882441  1.4526075   0.06863618 -0.0180711  -0.14859328]
+ [-1.0338513  -1.0570263  -0.2118788  -0.03613...    0.23107018  1.2565722  -0.6088181 ]
+ [-0.48849607 -0.38427642  0.2980011   0.04987274  1.2440314 ]], device=cpu()))
+self       = <needle.ops.ops_mathematic.Stack object at 0x7d003c302180>
+shape      = 25
+
+python/needle/ops/ops_mathematic.py:358: AssertionError
+__________________________ test_stack[cpu-shape2-2-5] __________________________
+
+shape = (1, 5, 7), axis = 2, l = 5, device = cpu()
+
+    @pytest.mark.parametrize("shape, axis, l", STACK_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_stack(shape, axis, l, device):
+        _A = [np.random.randn(*shape).astype(np.float32) for i in range(l)]
+        A = [ndl.Tensor(nd.array(_A[i]), device=device) for i in range(l)]
+        A_t = [torch.Tensor(_A[i]) for i in range(l)]
+>       out = ndl.stack(A, axis=axis)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = [needle.Tensor([[[-1.33112311e+00  1.83877885e-01 -7.14379311e-01 -1.12926376e+00
+   -1.07434380e+00  6.78442299e-01  ...01]
+  [-5.3036362e-01 -1.2659273e+00 -1.3819758e+00 -8.8034773e-01
+    1.9707146e+00  5.0163239e-01 -1.3402538e-01]]])]
+A_t        = [tensor([[[-1.3311e+00,  1.8388e-01, -7.1438e-01, -1.1293e+00, -1.0743e+00,
+           6.7844e-01,  4.6458e-01],
+     ...01],
+         [-5.3036e-01, -1.2659e+00, -1.3820e+00, -8.8035e-01,  1.9707e+00,
+           5.0163e-01, -1.3403e-01]]])]
+_A         = [array([[[-1.33112311e+00,  1.83877885e-01, -7.14379311e-01,
+         -1.12926376e+00, -1.07434380e+00,  6.78442299e-0...659273e+00, -1.3819758e+00, -8.8034773e-01,
+          1.9707146e+00,  5.0163239e-01, -1.3402538e-01]]], dtype=float32)]
+axis       = 2
+device     = cpu()
+l          = 5
+shape      = (1, 5, 7)
+
+tests/hw4/test_nd_backend.py:154: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_mathematic.py:377: in stack
+    return Stack(axis)(make_tuple(*args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = [needle.Tensor([[[-1.33112311e+00  1.83877885e-01 -7.14379311e-01 -1.12926376e+00
+   -1.07434380e+00  6.78442299e-01  ...01]
+  [-5.3036362e-01 -1.2659273e+00 -1.3819758e+00 -8.8034773e-01
+    1.9707146e+00  5.0163239e-01 -1.3402538e-01]]])]
+        axis       = 2
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.TensorTuple(needle.Tensor([[[-1.33112311e+00  1.83877885e-01 -7.14379311e-01 -1.12926376e+00
+   -1.07434380e+0...]
+  [-5.3036362e-01 -1.2659273e+00 -1.3819758e+00 -8.8034773e-01
+    1.9707146e+00  5.0163239e-01 -1.3402538e-01]]])),)
+        self       = <needle.ops.ops_mathematic.Stack object at 0x7d003ba3f710>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.TensorTuple(needle.Tensor([[[-1.33112311e+00  1.83877885e-01 -7.14379311e-01 -1.12926376e+00
+   -1.07434380e+0...]
+  [-5.3036362e-01 -1.2659273e+00 -1.3819758e+00 -8.8034773e-01
+    1.9707146e+00  5.0163239e-01 -1.3402538e-01]]])),)
+        op         = <needle.ops.ops_mathematic.Stack object at 0x7d003ba3f710>
+        tensor     = <[AssertionError('All arrays need to be of the same size!') raised in repr()] Tensor object at 0x7d003ba7f9e0>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AssertionError('All arrays need to be of the same size!') raised in repr()] Tensor object at 0x7d003ba7f9e0>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Stack object at 0x7d003ba3f710>
+args = (NDArray([[[-1.33112311e+00  1.83877885e-01 -7.14379311e-01 -1.12926376e+00
+   -1.07434380e+00  6.78442299e-01  4.6458...362e-01 -1.2659273e+00 -1.3819758e+00 -8.8034773e-01
+    1.9707146e+00  5.0163239e-01 -1.3402538e-01]]], device=cpu()))
+
+    def compute(self, args: TensorTuple) -> Tensor:
+        ### BEGIN YOUR SOLUTION
+        assert len(args) > 0, "Stack needs at least one array!"
+        shape = args[0].size
+        for a in args:
+>         assert a.shape==shape, "All arrays need to be of the same size!"
+                 ^^^^^^^^^^^^^^
+E         AssertionError: All arrays need to be of the same size!
+
+a          = NDArray([[[-1.33112311e+00  1.83877885e-01 -7.14379311e-01 -1.12926376e+00
+   -1.07434380e+00  6.78442299e-01  4.64584...00 -1.02882600e+00 -3.37323487e-01  8.58686566e-01
+    7.63430417e-01 -2.11228919e+00 -6.85186446e-01]]], device=cpu())
+args       = (NDArray([[[-1.33112311e+00  1.83877885e-01 -7.14379311e-01 -1.12926376e+00
+   -1.07434380e+00  6.78442299e-01  4.6458...362e-01 -1.2659273e+00 -1.3819758e+00 -8.8034773e-01
+    1.9707146e+00  5.0163239e-01 -1.3402538e-01]]], device=cpu()))
+self       = <needle.ops.ops_mathematic.Stack object at 0x7d003ba3f710>
+shape      = 35
+
+python/needle/ops/ops_mathematic.py:358: AssertionError
+_________________________ test_stack[cuda-shape0-0-1] __________________________
+
+shape = (5, 5), axis = 0, l = 1, device = cuda()
+
+    @pytest.mark.parametrize("shape, axis, l", STACK_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_stack(shape, axis, l, device):
+        _A = [np.random.randn(*shape).astype(np.float32) for i in range(l)]
+        A = [ndl.Tensor(nd.array(_A[i]), device=device) for i in range(l)]
+        A_t = [torch.Tensor(_A[i]) for i in range(l)]
+>       out = ndl.stack(A, axis=axis)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = [needle.Tensor([[-0.01668357  1.1806753  -0.57011104 -0.16424966  0.1057056 ]
+ [-0.01159221  0.06366155  0.31758705 -0...4927 -0.19975884 -1.3304735  -0.11766437 -1.019091  ]
+ [ 0.01301353  0.40394965  1.6848668  -0.09611785 -0.1998671 ]])]
+A_t        = [tensor([[-0.0167,  1.1807, -0.5701, -0.1642,  0.1057],
+        [-0.0116,  0.0637,  0.3176, -0.9027, -0.7916],
+       ....3726],
+        [ 0.8278, -0.1998, -1.3305, -0.1177, -1.0191],
+        [ 0.0130,  0.4039,  1.6849, -0.0961, -0.1999]])]
+_A         = [array([[-0.01668357,  1.1806753 , -0.57011104, -0.16424966,  0.1057056 ],
+       [-0.01159221,  0.06366155,  0.317587...1766437, -1.019091  ],
+       [ 0.01301353,  0.40394965,  1.6848668 , -0.09611785, -0.1998671 ]],
+      dtype=float32)]
+axis       = 0
+device     = cuda()
+l          = 1
+shape      = (5, 5)
+
+tests/hw4/test_nd_backend.py:154: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_mathematic.py:377: in stack
+    return Stack(axis)(make_tuple(*args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = [needle.Tensor([[-0.01668357  1.1806753  -0.57011104 -0.16424966  0.1057056 ]
+ [-0.01159221  0.06366155  0.31758705 -0...4927 -0.19975884 -1.3304735  -0.11766437 -1.019091  ]
+ [ 0.01301353  0.40394965  1.6848668  -0.09611785 -0.1998671 ]])]
+        axis       = 0
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.TensorTuple(needle.Tensor([[-0.01668357  1.1806753  -0.57011104 -0.16424966  0.1057056 ]
+ [-0.01159221  0.0636...7 -0.19975884 -1.3304735  -0.11766437 -1.019091  ]
+ [ 0.01301353  0.40394965  1.6848668  -0.09611785 -0.1998671 ]]),),)
+        self       = <needle.ops.ops_mathematic.Stack object at 0x7d003ba7ce90>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.TensorTuple(needle.Tensor([[-0.01668357  1.1806753  -0.57011104 -0.16424966  0.1057056 ]
+ [-0.01159221  0.0636...7 -0.19975884 -1.3304735  -0.11766437 -1.019091  ]
+ [ 0.01301353  0.40394965  1.6848668  -0.09611785 -0.1998671 ]]),),)
+        op         = <needle.ops.ops_mathematic.Stack object at 0x7d003ba7ce90>
+        tensor     = <[AssertionError('All arrays need to be of the same size!') raised in repr()] Tensor object at 0x7d003ba7ff50>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AssertionError('All arrays need to be of the same size!') raised in repr()] Tensor object at 0x7d003ba7ff50>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Stack object at 0x7d003ba7ce90>
+args = (NDArray([[-0.01668357  1.1806753  -0.57011104 -0.16424966  0.1057056 ]
+ [-0.01159221  0.06366155  0.31758705 -0.90268... -1.3304735  -0.11766437 -1.019091  ]
+ [ 0.01301353  0.40394965  1.6848668  -0.09611785 -0.1998671 ]], device=cuda()),)
+
+    def compute(self, args: TensorTuple) -> Tensor:
+        ### BEGIN YOUR SOLUTION
+        assert len(args) > 0, "Stack needs at least one array!"
+        shape = args[0].size
+        for a in args:
+>         assert a.shape==shape, "All arrays need to be of the same size!"
+                 ^^^^^^^^^^^^^^
+E         AssertionError: All arrays need to be of the same size!
+
+a          = NDArray([[-0.01668357  1.1806753  -0.57011104 -0.16424966  0.1057056 ]
+ [-0.01159221  0.06366155  0.31758705 -0.902689...84 -1.3304735  -0.11766437 -1.019091  ]
+ [ 0.01301353  0.40394965  1.6848668  -0.09611785 -0.1998671 ]], device=cuda())
+args       = (NDArray([[-0.01668357  1.1806753  -0.57011104 -0.16424966  0.1057056 ]
+ [-0.01159221  0.06366155  0.31758705 -0.90268... -1.3304735  -0.11766437 -1.019091  ]
+ [ 0.01301353  0.40394965  1.6848668  -0.09611785 -0.1998671 ]], device=cuda()),)
+self       = <needle.ops.ops_mathematic.Stack object at 0x7d003ba7ce90>
+shape      = 25
+
+python/needle/ops/ops_mathematic.py:358: AssertionError
+_________________________ test_stack[cuda-shape1-0-2] __________________________
+
+shape = (5, 5), axis = 0, l = 2, device = cuda()
+
+    @pytest.mark.parametrize("shape, axis, l", STACK_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_stack(shape, axis, l, device):
+        _A = [np.random.randn(*shape).astype(np.float32) for i in range(l)]
+        A = [ndl.Tensor(nd.array(_A[i]), device=device) for i in range(l)]
+        A_t = [torch.Tensor(_A[i]) for i in range(l)]
+>       out = ndl.stack(A, axis=axis)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = [needle.Tensor([[-0.4484034   1.0540462   0.03045906 -0.4768823   1.5634812 ]
+ [-1.0746397   0.9731278  -1.0777118  -1...3593  0.29344648  0.64067996  0.24550702 -0.8840323 ]
+ [ 2.7280824   3.322596   -0.28550744  0.32897174  0.29785007]])]
+A_t        = [tensor([[-0.4484,  1.0540,  0.0305, -0.4769,  1.5635],
+        [-1.0746,  0.9731, -1.0777, -1.1209, -0.4109],
+       ....5013],
+        [ 0.7467,  0.2934,  0.6407,  0.2455, -0.8840],
+        [ 2.7281,  3.3226, -0.2855,  0.3290,  0.2979]])]
+_A         = [array([[-0.4484034 ,  1.0540462 ,  0.03045906, -0.4768823 ,  1.5634812 ],
+       [-1.0746397 ,  0.9731278 , -1.077711...4550702, -0.8840323 ],
+       [ 2.7280824 ,  3.322596  , -0.28550744,  0.32897174,  0.29785007]],
+      dtype=float32)]
+axis       = 0
+device     = cuda()
+l          = 2
+shape      = (5, 5)
+
+tests/hw4/test_nd_backend.py:154: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_mathematic.py:377: in stack
+    return Stack(axis)(make_tuple(*args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = [needle.Tensor([[-0.4484034   1.0540462   0.03045906 -0.4768823   1.5634812 ]
+ [-1.0746397   0.9731278  -1.0777118  -1...3593  0.29344648  0.64067996  0.24550702 -0.8840323 ]
+ [ 2.7280824   3.322596   -0.28550744  0.32897174  0.29785007]])]
+        axis       = 0
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.TensorTuple(needle.Tensor([[-0.4484034   1.0540462   0.03045906 -0.4768823   1.5634812 ]
+ [-1.0746397   0.9731...93  0.29344648  0.64067996  0.24550702 -0.8840323 ]
+ [ 2.7280824   3.322596   -0.28550744  0.32897174  0.29785007]])),)
+        self       = <needle.ops.ops_mathematic.Stack object at 0x7d003bad92e0>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.TensorTuple(needle.Tensor([[-0.4484034   1.0540462   0.03045906 -0.4768823   1.5634812 ]
+ [-1.0746397   0.9731...93  0.29344648  0.64067996  0.24550702 -0.8840323 ]
+ [ 2.7280824   3.322596   -0.28550744  0.32897174  0.29785007]])),)
+        op         = <needle.ops.ops_mathematic.Stack object at 0x7d003bad92e0>
+        tensor     = <[AssertionError('All arrays need to be of the same size!') raised in repr()] Tensor object at 0x7d003badb7a0>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AssertionError('All arrays need to be of the same size!') raised in repr()] Tensor object at 0x7d003badb7a0>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Stack object at 0x7d003bad92e0>
+args = (NDArray([[-0.4484034   1.0540462   0.03045906 -0.4768823   1.5634812 ]
+ [-1.0746397   0.9731278  -1.0777118  -1.12089...8  0.64067996  0.24550702 -0.8840323 ]
+ [ 2.7280824   3.322596   -0.28550744  0.32897174  0.29785007]], device=cuda()))
+
+    def compute(self, args: TensorTuple) -> Tensor:
+        ### BEGIN YOUR SOLUTION
+        assert len(args) > 0, "Stack needs at least one array!"
+        shape = args[0].size
+        for a in args:
+>         assert a.shape==shape, "All arrays need to be of the same size!"
+                 ^^^^^^^^^^^^^^
+E         AssertionError: All arrays need to be of the same size!
+
+a          = NDArray([[-0.4484034   1.0540462   0.03045906 -0.4768823   1.5634812 ]
+ [-1.0746397   0.9731278  -1.0777118  -1.120894...    0.05473262 -0.55619    -1.5326247 ]
+ [-0.15539446  1.4958445  -0.8986428  -0.59488994 -0.5744211 ]], device=cuda())
+args       = (NDArray([[-0.4484034   1.0540462   0.03045906 -0.4768823   1.5634812 ]
+ [-1.0746397   0.9731278  -1.0777118  -1.12089...8  0.64067996  0.24550702 -0.8840323 ]
+ [ 2.7280824   3.322596   -0.28550744  0.32897174  0.29785007]], device=cuda()))
+self       = <needle.ops.ops_mathematic.Stack object at 0x7d003bad92e0>
+shape      = 25
+
+python/needle/ops/ops_mathematic.py:358: AssertionError
+_________________________ test_stack[cuda-shape2-2-5] __________________________
+
+shape = (1, 5, 7), axis = 2, l = 5, device = cuda()
+
+    @pytest.mark.parametrize("shape, axis, l", STACK_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_stack(shape, axis, l, device):
+        _A = [np.random.randn(*shape).astype(np.float32) for i in range(l)]
+        A = [ndl.Tensor(nd.array(_A[i]), device=device) for i in range(l)]
+        A_t = [torch.Tensor(_A[i]) for i in range(l)]
+>       out = ndl.stack(A, axis=axis)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = [needle.Tensor([[[ 0.38333625  0.18051435  0.1305337   0.8501626   0.6712771
+    1.1948769  -0.30687174]
+  [-0.4117157...   -0.30100098  0.6343639 ]
+  [-0.04002846 -0.7133349   1.1940389   0.39805946 -1.54246
+   -1.0406394  -1.0654556 ]]])]
+A_t        = [tensor([[[ 0.3833,  0.1805,  0.1305,  0.8502,  0.6713,  1.1949, -0.3069],
+         [-0.4117, -0.2897,  0.5881,  1.263...1644,  0.5059,  0.1374, -0.3010,  0.6344],
+         [-0.0400, -0.7133,  1.1940,  0.3981, -1.5425, -1.0406, -1.0655]]])]
+_A         = [array([[[ 0.38333625,  0.18051435,  0.1305337 ,  0.8501626 ,
+          0.6712771 ,  1.1948769 , -0.30687174],
+       ...[-0.04002846, -0.7133349 ,  1.1940389 ,  0.39805946,
+         -1.54246   , -1.0406394 , -1.0654556 ]]], dtype=float32)]
+axis       = 2
+device     = cuda()
+l          = 5
+shape      = (1, 5, 7)
+
+tests/hw4/test_nd_backend.py:154: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_mathematic.py:377: in stack
+    return Stack(axis)(make_tuple(*args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = [needle.Tensor([[[ 0.38333625  0.18051435  0.1305337   0.8501626   0.6712771
+    1.1948769  -0.30687174]
+  [-0.4117157...   -0.30100098  0.6343639 ]
+  [-0.04002846 -0.7133349   1.1940389   0.39805946 -1.54246
+   -1.0406394  -1.0654556 ]]])]
+        axis       = 2
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.TensorTuple(needle.Tensor([[[ 0.38333625  0.18051435  0.1305337   0.8501626   0.6712771
+    1.1948769  -0.3068... -0.30100098  0.6343639 ]
+  [-0.04002846 -0.7133349   1.1940389   0.39805946 -1.54246
+   -1.0406394  -1.0654556 ]]])),)
+        self       = <needle.ops.ops_mathematic.Stack object at 0x7d003c38c380>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.TensorTuple(needle.Tensor([[[ 0.38333625  0.18051435  0.1305337   0.8501626   0.6712771
+    1.1948769  -0.3068... -0.30100098  0.6343639 ]
+  [-0.04002846 -0.7133349   1.1940389   0.39805946 -1.54246
+   -1.0406394  -1.0654556 ]]])),)
+        op         = <needle.ops.ops_mathematic.Stack object at 0x7d003c38c380>
+        tensor     = <[AssertionError('All arrays need to be of the same size!') raised in repr()] Tensor object at 0x7d003bad9220>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AssertionError('All arrays need to be of the same size!') raised in repr()] Tensor object at 0x7d003bad9220>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Stack object at 0x7d003c38c380>
+args = (NDArray([[[ 0.38333625  0.18051435  0.1305337   0.8501626   0.6712771
+    1.1948769  -0.30687174]
+  [-0.41171578 -0.2... 0.6343639 ]
+  [-0.04002846 -0.7133349   1.1940389   0.39805946 -1.54246
+   -1.0406394  -1.0654556 ]]], device=cuda()))
+
+    def compute(self, args: TensorTuple) -> Tensor:
+        ### BEGIN YOUR SOLUTION
+        assert len(args) > 0, "Stack needs at least one array!"
+        shape = args[0].size
+        for a in args:
+>         assert a.shape==shape, "All arrays need to be of the same size!"
+                 ^^^^^^^^^^^^^^
+E         AssertionError: All arrays need to be of the same size!
+
+a          = NDArray([[[ 0.38333625  0.18051435  0.1305337   0.8501626   0.6712771
+    1.1948769  -0.30687174]
+  [-0.41171578 -0.28...1.4118447 ]
+  [ 1.1920424  -1.2416089   0.38372448  1.2454005  -1.1887451
+   -0.16322023 -0.82296306]]], device=cuda())
+args       = (NDArray([[[ 0.38333625  0.18051435  0.1305337   0.8501626   0.6712771
+    1.1948769  -0.30687174]
+  [-0.41171578 -0.2... 0.6343639 ]
+  [-0.04002846 -0.7133349   1.1940389   0.39805946 -1.54246
+   -1.0406394  -1.0654556 ]]], device=cuda()))
+self       = <needle.ops.ops_mathematic.Stack object at 0x7d003c38c380>
+shape      = 35
+
+python/needle/ops/ops_mathematic.py:358: AssertionError
+_____________________ test_stack_backward[cpu-shape0-0-1] ______________________
+
+shape = (5, 5), axis = 0, l = 1, device = cpu()
+
+    @pytest.mark.parametrize("shape, axis, l", STACK_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_stack_backward(shape, axis, l, device):
+        _A = [np.random.randn(*shape).astype(np.float32) for i in range(l)]
+        A = [ndl.Tensor(nd.array(_A[i]), device=device) for i in range(l)]
+        A_t = [torch.Tensor(_A[i]) for i in range(l)]
+        for i in range(l):
+            A_t[i].requires_grad = True
+>       ndl.stack(A, axis=axis).sum().backward()
+        ^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = [needle.Tensor([[-0.26491052 -2.136809   -0.28127787  0.54197794 -0.8279596 ]
+ [-0.19517688  1.2884692   1.625865   -1...0993  0.60915947  1.7407578  -0.15845154  0.4973323 ]
+ [ 0.7943122   0.8822589  -1.2203852  -0.5734197  -0.6012362 ]])]
+A_t        = [tensor([[-0.2649, -2.1368, -0.2813,  0.5420, -0.8280],
+        [-0.1952,  1.2885,  1.6259, -1.3193,  0.6103],
+       ...3294,  0.6092,  1.7408, -0.1585,  0.4973],
+        [ 0.7943,  0.8823, -1.2204, -0.5734, -0.6012]], requires_grad=True)]
+_A         = [array([[-0.26491052, -2.136809  , -0.28127787,  0.54197794, -0.8279596 ],
+       [-0.19517688,  1.2884692 ,  1.625865...5845154,  0.4973323 ],
+       [ 0.7943122 ,  0.8822589 , -1.2203852 , -0.5734197 , -0.6012362 ]],
+      dtype=float32)]
+axis       = 0
+device     = cpu()
+i          = 0
+l          = 1
+shape      = (5, 5)
+
+tests/hw4/test_nd_backend.py:167: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_mathematic.py:377: in stack
+    return Stack(axis)(make_tuple(*args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = [needle.Tensor([[-0.26491052 -2.136809   -0.28127787  0.54197794 -0.8279596 ]
+ [-0.19517688  1.2884692   1.625865   -1...0993  0.60915947  1.7407578  -0.15845154  0.4973323 ]
+ [ 0.7943122   0.8822589  -1.2203852  -0.5734197  -0.6012362 ]])]
+        axis       = 0
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.TensorTuple(needle.Tensor([[-0.26491052 -2.136809   -0.28127787  0.54197794 -0.8279596 ]
+ [-0.19517688  1.2884...3  0.60915947  1.7407578  -0.15845154  0.4973323 ]
+ [ 0.7943122   0.8822589  -1.2203852  -0.5734197  -0.6012362 ]]),),)
+        self       = <needle.ops.ops_mathematic.Stack object at 0x7d003ba7e0f0>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.TensorTuple(needle.Tensor([[-0.26491052 -2.136809   -0.28127787  0.54197794 -0.8279596 ]
+ [-0.19517688  1.2884...3  0.60915947  1.7407578  -0.15845154  0.4973323 ]
+ [ 0.7943122   0.8822589  -1.2203852  -0.5734197  -0.6012362 ]]),),)
+        op         = <needle.ops.ops_mathematic.Stack object at 0x7d003ba7e0f0>
+        tensor     = <[AssertionError('All arrays need to be of the same size!') raised in repr()] Tensor object at 0x7d003ba7d970>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AssertionError('All arrays need to be of the same size!') raised in repr()] Tensor object at 0x7d003ba7d970>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Stack object at 0x7d003ba7e0f0>
+args = (NDArray([[-0.26491052 -2.136809   -0.28127787  0.54197794 -0.8279596 ]
+ [-0.19517688  1.2884692   1.625865   -1.31933...7  1.7407578  -0.15845154  0.4973323 ]
+ [ 0.7943122   0.8822589  -1.2203852  -0.5734197  -0.6012362 ]], device=cpu()),)
+
+    def compute(self, args: TensorTuple) -> Tensor:
+        ### BEGIN YOUR SOLUTION
+        assert len(args) > 0, "Stack needs at least one array!"
+        shape = args[0].size
+        for a in args:
+>         assert a.shape==shape, "All arrays need to be of the same size!"
+                 ^^^^^^^^^^^^^^
+E         AssertionError: All arrays need to be of the same size!
+
+a          = NDArray([[-0.26491052 -2.136809   -0.28127787  0.54197794 -0.8279596 ]
+ [-0.19517688  1.2884692   1.625865   -1.319338...947  1.7407578  -0.15845154  0.4973323 ]
+ [ 0.7943122   0.8822589  -1.2203852  -0.5734197  -0.6012362 ]], device=cpu())
+args       = (NDArray([[-0.26491052 -2.136809   -0.28127787  0.54197794 -0.8279596 ]
+ [-0.19517688  1.2884692   1.625865   -1.31933...7  1.7407578  -0.15845154  0.4973323 ]
+ [ 0.7943122   0.8822589  -1.2203852  -0.5734197  -0.6012362 ]], device=cpu()),)
+self       = <needle.ops.ops_mathematic.Stack object at 0x7d003ba7e0f0>
+shape      = 25
+
+python/needle/ops/ops_mathematic.py:358: AssertionError
+_____________________ test_stack_backward[cpu-shape1-0-2] ______________________
+
+shape = (5, 5), axis = 0, l = 2, device = cpu()
+
+    @pytest.mark.parametrize("shape, axis, l", STACK_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_stack_backward(shape, axis, l, device):
+        _A = [np.random.randn(*shape).astype(np.float32) for i in range(l)]
+        A = [ndl.Tensor(nd.array(_A[i]), device=device) for i in range(l)]
+        A_t = [torch.Tensor(_A[i]) for i in range(l)]
+        for i in range(l):
+            A_t[i].requires_grad = True
+>       ndl.stack(A, axis=axis).sum().backward()
+        ^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = [needle.Tensor([[-0.2229816   0.08610313  0.13694113  1.5095038  -0.7126971 ]
+ [-0.73380625 -1.1747231  -0.3217507   0...209   0.0315434   0.55054754 -0.9497181  -0.03779113]
+ [-1.6837281  -1.3372594   1.0487753   2.258363    0.94000864]])]
+A_t        = [tensor([[-0.2230,  0.0861,  0.1369,  1.5095, -0.7127],
+        [-0.7338, -1.1747, -0.3218,  0.8628, -1.1587],
+       ...7436,  0.0315,  0.5505, -0.9497, -0.0378],
+        [-1.6837, -1.3373,  1.0488,  2.2584,  0.9400]], requires_grad=True)]
+_A         = [array([[-0.2229816 ,  0.08610313,  0.13694113,  1.5095038 , -0.7126971 ],
+       [-0.73380625, -1.1747231 , -0.321750...497181 , -0.03779113],
+       [-1.6837281 , -1.3372594 ,  1.0487753 ,  2.258363  ,  0.94000864]],
+      dtype=float32)]
+axis       = 0
+device     = cpu()
+i          = 1
+l          = 2
+shape      = (5, 5)
+
+tests/hw4/test_nd_backend.py:167: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_mathematic.py:377: in stack
+    return Stack(axis)(make_tuple(*args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = [needle.Tensor([[-0.2229816   0.08610313  0.13694113  1.5095038  -0.7126971 ]
+ [-0.73380625 -1.1747231  -0.3217507   0...209   0.0315434   0.55054754 -0.9497181  -0.03779113]
+ [-1.6837281  -1.3372594   1.0487753   2.258363    0.94000864]])]
+        axis       = 0
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.TensorTuple(needle.Tensor([[-0.2229816   0.08610313  0.13694113  1.5095038  -0.7126971 ]
+ [-0.73380625 -1.1747...9   0.0315434   0.55054754 -0.9497181  -0.03779113]
+ [-1.6837281  -1.3372594   1.0487753   2.258363    0.94000864]])),)
+        self       = <needle.ops.ops_mathematic.Stack object at 0x7d003ba7c7d0>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.TensorTuple(needle.Tensor([[-0.2229816   0.08610313  0.13694113  1.5095038  -0.7126971 ]
+ [-0.73380625 -1.1747...9   0.0315434   0.55054754 -0.9497181  -0.03779113]
+ [-1.6837281  -1.3372594   1.0487753   2.258363    0.94000864]])),)
+        op         = <needle.ops.ops_mathematic.Stack object at 0x7d003ba7c7d0>
+        tensor     = <[AssertionError('All arrays need to be of the same size!') raised in repr()] Tensor object at 0x7d003bad98e0>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AssertionError('All arrays need to be of the same size!') raised in repr()] Tensor object at 0x7d003bad98e0>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Stack object at 0x7d003ba7c7d0>
+args = (NDArray([[-0.2229816   0.08610313  0.13694113  1.5095038  -0.7126971 ]
+ [-0.73380625 -1.1747231  -0.3217507   0.86278...4   0.55054754 -0.9497181  -0.03779113]
+ [-1.6837281  -1.3372594   1.0487753   2.258363    0.94000864]], device=cpu()))
+
+    def compute(self, args: TensorTuple) -> Tensor:
+        ### BEGIN YOUR SOLUTION
+        assert len(args) > 0, "Stack needs at least one array!"
+        shape = args[0].size
+        for a in args:
+>         assert a.shape==shape, "All arrays need to be of the same size!"
+                 ^^^^^^^^^^^^^^
+E         AssertionError: All arrays need to be of the same size!
+
+a          = NDArray([[-0.2229816   0.08610313  0.13694113  1.5095038  -0.7126971 ]
+ [-0.73380625 -1.1747231  -0.3217507   0.862788...57   0.15667978 -0.51413214 -0.48448387]
+ [ 2.1973803  -1.9636192   0.514529    1.2824663  -1.5058179 ]], device=cpu())
+args       = (NDArray([[-0.2229816   0.08610313  0.13694113  1.5095038  -0.7126971 ]
+ [-0.73380625 -1.1747231  -0.3217507   0.86278...4   0.55054754 -0.9497181  -0.03779113]
+ [-1.6837281  -1.3372594   1.0487753   2.258363    0.94000864]], device=cpu()))
+self       = <needle.ops.ops_mathematic.Stack object at 0x7d003ba7c7d0>
+shape      = 25
+
+python/needle/ops/ops_mathematic.py:358: AssertionError
+_____________________ test_stack_backward[cpu-shape2-2-5] ______________________
+
+shape = (1, 5, 7), axis = 2, l = 5, device = cpu()
+
+    @pytest.mark.parametrize("shape, axis, l", STACK_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_stack_backward(shape, axis, l, device):
+        _A = [np.random.randn(*shape).astype(np.float32) for i in range(l)]
+        A = [ndl.Tensor(nd.array(_A[i]), device=device) for i in range(l)]
+        A_t = [torch.Tensor(_A[i]) for i in range(l)]
+        for i in range(l):
+            A_t[i].requires_grad = True
+>       ndl.stack(A, axis=axis).sum().backward()
+        ^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = [needle.Tensor([[[ 1.4048624   2.0662467   1.975455    0.70656043 -1.1856185
+   -1.0202792  -0.12881304]
+  [-0.1319975... 0.8690877   0.2656894 ]
+  [ 1.7976619   0.24236043 -0.95474315 -0.74990946  0.05611507
+   -1.0931357   0.24931994]]])]
+A_t        = [tensor([[[ 1.4049,  2.0662,  1.9755,  0.7066, -1.1856, -1.0203, -0.1288],
+         [-0.1320, -0.5643,  0.2627, -0.298...8691,  0.2657],
+         [ 1.7977,  0.2424, -0.9547, -0.7499,  0.0561, -1.0931,  0.2493]]],
+       requires_grad=True)]
+_A         = [array([[[ 1.4048624 ,  2.0662467 ,  1.975455  ,  0.70656043,
+         -1.1856185 , -1.0202792 , -0.12881304],
+       ...[ 1.7976619 ,  0.24236043, -0.95474315, -0.74990946,
+          0.05611507, -1.0931357 ,  0.24931994]]], dtype=float32)]
+axis       = 2
+device     = cpu()
+i          = 4
+l          = 5
+shape      = (1, 5, 7)
+
+tests/hw4/test_nd_backend.py:167: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_mathematic.py:377: in stack
+    return Stack(axis)(make_tuple(*args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = [needle.Tensor([[[ 1.4048624   2.0662467   1.975455    0.70656043 -1.1856185
+   -1.0202792  -0.12881304]
+  [-0.1319975... 0.8690877   0.2656894 ]
+  [ 1.7976619   0.24236043 -0.95474315 -0.74990946  0.05611507
+   -1.0931357   0.24931994]]])]
+        axis       = 2
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.TensorTuple(needle.Tensor([[[ 1.4048624   2.0662467   1.975455    0.70656043 -1.1856185
+   -1.0202792  -0.1288....8690877   0.2656894 ]
+  [ 1.7976619   0.24236043 -0.95474315 -0.74990946  0.05611507
+   -1.0931357   0.24931994]]])),)
+        self       = <needle.ops.ops_mathematic.Stack object at 0x7d003bad9f40>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.TensorTuple(needle.Tensor([[[ 1.4048624   2.0662467   1.975455    0.70656043 -1.1856185
+   -1.0202792  -0.1288....8690877   0.2656894 ]
+  [ 1.7976619   0.24236043 -0.95474315 -0.74990946  0.05611507
+   -1.0931357   0.24931994]]])),)
+        op         = <needle.ops.ops_mathematic.Stack object at 0x7d003bad9f40>
+        tensor     = <[AssertionError('All arrays need to be of the same size!') raised in repr()] Tensor object at 0x7d003bad9e20>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AssertionError('All arrays need to be of the same size!') raised in repr()] Tensor object at 0x7d003bad9e20>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Stack object at 0x7d003bad9f40>
+args = (NDArray([[[ 1.4048624   2.0662467   1.975455    0.70656043 -1.1856185
+   -1.0202792  -0.12881304]
+  [-0.13199753 -0.5....2656894 ]
+  [ 1.7976619   0.24236043 -0.95474315 -0.74990946  0.05611507
+   -1.0931357   0.24931994]]], device=cpu()))
+
+    def compute(self, args: TensorTuple) -> Tensor:
+        ### BEGIN YOUR SOLUTION
+        assert len(args) > 0, "Stack needs at least one array!"
+        shape = args[0].size
+        for a in args:
+>         assert a.shape==shape, "All arrays need to be of the same size!"
+                 ^^^^^^^^^^^^^^
+E         AssertionError: All arrays need to be of the same size!
+
+a          = NDArray([[[ 1.4048624   2.0662467   1.975455    0.70656043 -1.1856185
+   -1.0202792  -0.12881304]
+  [-0.13199753 -0.56... 0.16756324]
+  [-0.6065187  -0.40494004  0.97079724 -0.7445013  -0.3864942
+    0.93319327  0.3901911 ]]], device=cpu())
+args       = (NDArray([[[ 1.4048624   2.0662467   1.975455    0.70656043 -1.1856185
+   -1.0202792  -0.12881304]
+  [-0.13199753 -0.5....2656894 ]
+  [ 1.7976619   0.24236043 -0.95474315 -0.74990946  0.05611507
+   -1.0931357   0.24931994]]], device=cpu()))
+self       = <needle.ops.ops_mathematic.Stack object at 0x7d003bad9f40>
+shape      = 35
+
+python/needle/ops/ops_mathematic.py:358: AssertionError
+_____________________ test_stack_backward[cuda-shape0-0-1] _____________________
+
+shape = (5, 5), axis = 0, l = 1, device = cuda()
+
+    @pytest.mark.parametrize("shape, axis, l", STACK_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_stack_backward(shape, axis, l, device):
+        _A = [np.random.randn(*shape).astype(np.float32) for i in range(l)]
+        A = [ndl.Tensor(nd.array(_A[i]), device=device) for i in range(l)]
+        A_t = [torch.Tensor(_A[i]) for i in range(l)]
+        for i in range(l):
+            A_t[i].requires_grad = True
+>       ndl.stack(A, axis=axis).sum().backward()
+        ^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = [needle.Tensor([[-1.122568    1.3219295  -0.14445436 -0.9865747   0.2616311 ]
+ [ 0.93468    -0.37505797  0.25460657  0...7374  0.82490486  0.5144381  -0.14003062 -0.20621192]
+ [-0.23054962 -2.1563048  -1.2538761   1.090643   -0.51554435]])]
+A_t        = [tensor([[-1.1226,  1.3219, -0.1445, -0.9866,  0.2616],
+        [ 0.9347, -0.3751,  0.2546,  0.2845,  0.7044],
+       ...3590,  0.8249,  0.5144, -0.1400, -0.2062],
+        [-0.2305, -2.1563, -1.2539,  1.0906, -0.5155]], requires_grad=True)]
+_A         = [array([[-1.122568  ,  1.3219295 , -0.14445436, -0.9865747 ,  0.2616311 ],
+       [ 0.93468   , -0.37505797,  0.254606...4003062, -0.20621192],
+       [-0.23054962, -2.1563048 , -1.2538761 ,  1.090643  , -0.51554435]],
+      dtype=float32)]
+axis       = 0
+device     = cuda()
+i          = 0
+l          = 1
+shape      = (5, 5)
+
+tests/hw4/test_nd_backend.py:167: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_mathematic.py:377: in stack
+    return Stack(axis)(make_tuple(*args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = [needle.Tensor([[-1.122568    1.3219295  -0.14445436 -0.9865747   0.2616311 ]
+ [ 0.93468    -0.37505797  0.25460657  0...7374  0.82490486  0.5144381  -0.14003062 -0.20621192]
+ [-0.23054962 -2.1563048  -1.2538761   1.090643   -0.51554435]])]
+        axis       = 0
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.TensorTuple(needle.Tensor([[-1.122568    1.3219295  -0.14445436 -0.9865747   0.2616311 ]
+ [ 0.93468    -0.3750...4  0.82490486  0.5144381  -0.14003062 -0.20621192]
+ [-0.23054962 -2.1563048  -1.2538761   1.090643   -0.51554435]]),),)
+        self       = <needle.ops.ops_mathematic.Stack object at 0x7d003bad9ee0>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.TensorTuple(needle.Tensor([[-1.122568    1.3219295  -0.14445436 -0.9865747   0.2616311 ]
+ [ 0.93468    -0.3750...4  0.82490486  0.5144381  -0.14003062 -0.20621192]
+ [-0.23054962 -2.1563048  -1.2538761   1.090643   -0.51554435]]),),)
+        op         = <needle.ops.ops_mathematic.Stack object at 0x7d003bad9ee0>
+        tensor     = <[AssertionError('All arrays need to be of the same size!') raised in repr()] Tensor object at 0x7d003bad9f70>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AssertionError('All arrays need to be of the same size!') raised in repr()] Tensor object at 0x7d003bad9f70>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Stack object at 0x7d003bad9ee0>
+args = (NDArray([[-1.122568    1.3219295  -0.14445436 -0.9865747   0.2616311 ]
+ [ 0.93468    -0.37505797  0.25460657  0.28449...  0.5144381  -0.14003062 -0.20621192]
+ [-0.23054962 -2.1563048  -1.2538761   1.090643   -0.51554435]], device=cuda()),)
+
+    def compute(self, args: TensorTuple) -> Tensor:
+        ### BEGIN YOUR SOLUTION
+        assert len(args) > 0, "Stack needs at least one array!"
+        shape = args[0].size
+        for a in args:
+>         assert a.shape==shape, "All arrays need to be of the same size!"
+                 ^^^^^^^^^^^^^^
+E         AssertionError: All arrays need to be of the same size!
+
+a          = NDArray([[-1.122568    1.3219295  -0.14445436 -0.9865747   0.2616311 ]
+ [ 0.93468    -0.37505797  0.25460657  0.284491...86  0.5144381  -0.14003062 -0.20621192]
+ [-0.23054962 -2.1563048  -1.2538761   1.090643   -0.51554435]], device=cuda())
+args       = (NDArray([[-1.122568    1.3219295  -0.14445436 -0.9865747   0.2616311 ]
+ [ 0.93468    -0.37505797  0.25460657  0.28449...  0.5144381  -0.14003062 -0.20621192]
+ [-0.23054962 -2.1563048  -1.2538761   1.090643   -0.51554435]], device=cuda()),)
+self       = <needle.ops.ops_mathematic.Stack object at 0x7d003bad9ee0>
+shape      = 25
+
+python/needle/ops/ops_mathematic.py:358: AssertionError
+_____________________ test_stack_backward[cuda-shape1-0-2] _____________________
+
+shape = (5, 5), axis = 0, l = 2, device = cuda()
+
+    @pytest.mark.parametrize("shape, axis, l", STACK_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_stack_backward(shape, axis, l, device):
+        _A = [np.random.randn(*shape).astype(np.float32) for i in range(l)]
+        A = [ndl.Tensor(nd.array(_A[i]), device=device) for i in range(l)]
+        A_t = [torch.Tensor(_A[i]) for i in range(l)]
+        for i in range(l):
+            A_t[i].requires_grad = True
+>       ndl.stack(A, axis=axis).sum().backward()
+        ^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = [needle.Tensor([[-1.0567564  -0.30265552  0.4281822  -0.68831074  1.6516227 ]
+ [ 0.74296576 -0.27638575  0.76607263 -0...424   0.68060917  0.5635482   1.0085729   0.75971615]
+ [ 0.31350297 -2.0439312  -0.09097444  0.11011965 -0.23238643]])]
+A_t        = [tensor([[-1.0568, -0.3027,  0.4282, -0.6883,  1.6516],
+        [ 0.7430, -0.2764,  0.7661, -0.8939,  1.2894],
+       ...6141,  0.6806,  0.5635,  1.0086,  0.7597],
+        [ 0.3135, -2.0439, -0.0910,  0.1101, -0.2324]], requires_grad=True)]
+_A         = [array([[-1.0567564 , -0.30265552,  0.4281822 , -0.68831074,  1.6516227 ],
+       [ 0.74296576, -0.27638575,  0.766072...085729 ,  0.75971615],
+       [ 0.31350297, -2.0439312 , -0.09097444,  0.11011965, -0.23238643]],
+      dtype=float32)]
+axis       = 0
+device     = cuda()
+i          = 1
+l          = 2
+shape      = (5, 5)
+
+tests/hw4/test_nd_backend.py:167: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_mathematic.py:377: in stack
+    return Stack(axis)(make_tuple(*args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = [needle.Tensor([[-1.0567564  -0.30265552  0.4281822  -0.68831074  1.6516227 ]
+ [ 0.74296576 -0.27638575  0.76607263 -0...424   0.68060917  0.5635482   1.0085729   0.75971615]
+ [ 0.31350297 -2.0439312  -0.09097444  0.11011965 -0.23238643]])]
+        axis       = 0
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.TensorTuple(needle.Tensor([[-1.0567564  -0.30265552  0.4281822  -0.68831074  1.6516227 ]
+ [ 0.74296576 -0.2763...4   0.68060917  0.5635482   1.0085729   0.75971615]
+ [ 0.31350297 -2.0439312  -0.09097444  0.11011965 -0.23238643]])),)
+        self       = <needle.ops.ops_mathematic.Stack object at 0x7d003bad9fa0>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.TensorTuple(needle.Tensor([[-1.0567564  -0.30265552  0.4281822  -0.68831074  1.6516227 ]
+ [ 0.74296576 -0.2763...4   0.68060917  0.5635482   1.0085729   0.75971615]
+ [ 0.31350297 -2.0439312  -0.09097444  0.11011965 -0.23238643]])),)
+        op         = <needle.ops.ops_mathematic.Stack object at 0x7d003bad9fa0>
+        tensor     = <[AssertionError('All arrays need to be of the same size!') raised in repr()] Tensor object at 0x7d003bad8bf0>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AssertionError('All arrays need to be of the same size!') raised in repr()] Tensor object at 0x7d003bad8bf0>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Stack object at 0x7d003bad9fa0>
+args = (NDArray([[-1.0567564  -0.30265552  0.4281822  -0.68831074  1.6516227 ]
+ [ 0.74296576 -0.27638575  0.76607263 -0.89387...7  0.5635482   1.0085729   0.75971615]
+ [ 0.31350297 -2.0439312  -0.09097444  0.11011965 -0.23238643]], device=cuda()))
+
+    def compute(self, args: TensorTuple) -> Tensor:
+        ### BEGIN YOUR SOLUTION
+        assert len(args) > 0, "Stack needs at least one array!"
+        shape = args[0].size
+        for a in args:
+>         assert a.shape==shape, "All arrays need to be of the same size!"
+                 ^^^^^^^^^^^^^^
+E         AssertionError: All arrays need to be of the same size!
+
+a          = NDArray([[-1.0567564  -0.30265552  0.4281822  -0.68831074  1.6516227 ]
+ [ 0.74296576 -0.27638575  0.76607263 -0.893879...   -1.675307    0.01808921  0.4251273 ]
+ [-0.4152009  -0.06239878  0.346165    2.7762952   1.268207  ]], device=cuda())
+args       = (NDArray([[-1.0567564  -0.30265552  0.4281822  -0.68831074  1.6516227 ]
+ [ 0.74296576 -0.27638575  0.76607263 -0.89387...7  0.5635482   1.0085729   0.75971615]
+ [ 0.31350297 -2.0439312  -0.09097444  0.11011965 -0.23238643]], device=cuda()))
+self       = <needle.ops.ops_mathematic.Stack object at 0x7d003bad9fa0>
+shape      = 25
+
+python/needle/ops/ops_mathematic.py:358: AssertionError
+_____________________ test_stack_backward[cuda-shape2-2-5] _____________________
+
+shape = (1, 5, 7), axis = 2, l = 5, device = cuda()
+
+    @pytest.mark.parametrize("shape, axis, l", STACK_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_stack_backward(shape, axis, l, device):
+        _A = [np.random.randn(*shape).astype(np.float32) for i in range(l)]
+        A = [ndl.Tensor(nd.array(_A[i]), device=device) for i in range(l)]
+        A_t = [torch.Tensor(_A[i]) for i in range(l)]
+        for i in range(l):
+            A_t[i].requires_grad = True
+>       ndl.stack(A, axis=axis).sum().backward()
+        ^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = [needle.Tensor([[[-1.2567368  -0.00447594  0.03316377  0.4079615  -0.13135351
+   -1.1835566   0.15766405]
+  [ 0.406209... -1.9483194   0.21689712]
+  [ 0.43637753 -0.49504337  1.4166641  -0.2632424   1.5031598
+   -1.2881242  -0.24279231]]])]
+A_t        = [tensor([[[-1.2567, -0.0045,  0.0332,  0.4080, -0.1314, -1.1836,  0.1577],
+         [ 0.4062, -0.9746, -0.8885, -0.661...9483,  0.2169],
+         [ 0.4364, -0.4950,  1.4167, -0.2632,  1.5032, -1.2881, -0.2428]]],
+       requires_grad=True)]
+_A         = [array([[[-1.2567368 , -0.00447594,  0.03316377,  0.4079615 ,
+         -0.13135351, -1.1835566 ,  0.15766405],
+       ...[ 0.43637753, -0.49504337,  1.4166641 , -0.2632424 ,
+          1.5031598 , -1.2881242 , -0.24279231]]], dtype=float32)]
+axis       = 2
+device     = cuda()
+i          = 4
+l          = 5
+shape      = (1, 5, 7)
+
+tests/hw4/test_nd_backend.py:167: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_mathematic.py:377: in stack
+    return Stack(axis)(make_tuple(*args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = [needle.Tensor([[[-1.2567368  -0.00447594  0.03316377  0.4079615  -0.13135351
+   -1.1835566   0.15766405]
+  [ 0.406209... -1.9483194   0.21689712]
+  [ 0.43637753 -0.49504337  1.4166641  -0.2632424   1.5031598
+   -1.2881242  -0.24279231]]])]
+        axis       = 2
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.TensorTuple(needle.Tensor([[[-1.2567368  -0.00447594  0.03316377  0.4079615  -0.13135351
+   -1.1835566   0.157...1.9483194   0.21689712]
+  [ 0.43637753 -0.49504337  1.4166641  -0.2632424   1.5031598
+   -1.2881242  -0.24279231]]])),)
+        self       = <needle.ops.ops_mathematic.Stack object at 0x7d003bad9430>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.TensorTuple(needle.Tensor([[[-1.2567368  -0.00447594  0.03316377  0.4079615  -0.13135351
+   -1.1835566   0.157...1.9483194   0.21689712]
+  [ 0.43637753 -0.49504337  1.4166641  -0.2632424   1.5031598
+   -1.2881242  -0.24279231]]])),)
+        op         = <needle.ops.ops_mathematic.Stack object at 0x7d003bad9430>
+        tensor     = <[AssertionError('All arrays need to be of the same size!') raised in repr()] Tensor object at 0x7d003ba7df10>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AssertionError('All arrays need to be of the same size!') raised in repr()] Tensor object at 0x7d003ba7df10>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Stack object at 0x7d003bad9430>
+args = (NDArray([[[-1.2567368  -0.00447594  0.03316377  0.4079615  -0.13135351
+   -1.1835566   0.15766405]
+  [ 0.40620932 -0.....21689712]
+  [ 0.43637753 -0.49504337  1.4166641  -0.2632424   1.5031598
+   -1.2881242  -0.24279231]]], device=cuda()))
+
+    def compute(self, args: TensorTuple) -> Tensor:
+        ### BEGIN YOUR SOLUTION
+        assert len(args) > 0, "Stack needs at least one array!"
+        shape = args[0].size
+        for a in args:
+>         assert a.shape==shape, "All arrays need to be of the same size!"
+                 ^^^^^^^^^^^^^^
+E         AssertionError: All arrays need to be of the same size!
+
+a          = NDArray([[[-1.2567368  -0.00447594  0.03316377  0.4079615  -0.13135351
+   -1.1835566   0.15766405]
+  [ 0.40620932 -0.9...0.59009933]
+  [ 0.8493205  -0.56885314 -0.7772002   0.7995367   0.4393227
+   -0.18871014  1.500991  ]]], device=cuda())
+args       = (NDArray([[[-1.2567368  -0.00447594  0.03316377  0.4079615  -0.13135351
+   -1.1835566   0.15766405]
+  [ 0.40620932 -0.....21689712]
+  [ 0.43637753 -0.49504337  1.4166641  -0.2632424   1.5031598
+   -1.2881242  -0.24279231]]], device=cuda()))
+self       = <needle.ops.ops_mathematic.Stack object at 0x7d003bad9430>
+shape      = 35
+
+python/needle/ops/ops_mathematic.py:358: AssertionError
+____________________ test_summation_backward[cpu-shape1-0] _____________________
+
+shape = (5, 3), axes = 0, device = cpu()
+
+    @pytest.mark.parametrize("shape, axes", SUMMATION_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_summation_backward(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+>       backward_check(ndl.summation, A, axes=axes)
+
+A          = needle.Tensor([[-1.1112776  -2.5426693   0.51752055]
+ [ 0.47009262  0.3695671  -0.42903185]
+ [-0.4613905   0.24671845  1.2265509 ]
+ [ 0.43084052  0.54698414  0.00562425]
+ [-0.09525896  0.66889954 -1.8471652 ]])
+_A         = array([[-1.1112776 , -2.5426693 ,  0.51752055],
+       [ 0.4700926 ,  0.36956707, -0.42903188],
+       [-0.46139053,  ...5509 ],
+       [ 0.4308405 ,  0.54698414,  0.00562425],
+       [-0.09525896,  0.66889954, -1.8471652 ]], dtype=float32)
+axes       = 0
+device     = cpu()
+shape      = (5, 3)
+
+tests/hw4/test_nd_backend.py:191: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/hw4/test_nd_backend.py:28: in backward_check
+    backward_grad = out.op.gradient_as_tuple(ndl.Tensor(c, device=args[0].device), out)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[-1.1112776  -2.5426693   0.51752055]
+ [ 0.47009262  0.3695671  -0.42903185]
+ [-0.4613905   0.24671845  1.2265509 ]
+ [ 0.43084052  0.54698414  0.00562425]
+ [-0.09525896  0.66889954 -1.8471652 ]]),)
+        c          = array([ 0.97829075, -0.30162265,  0.88071494])
+        eps        = 1e-05
+        f          = <function summation at 0x7d01299f7ba0>
+        f1         = np.float64(-0.9997288714623455)
+        f2         = np.float64(-0.9997465096819906)
+        i          = 0
+        j          = 14
+        kwargs     = {'axes': 0}
+        num_args   = 1
+        numerical_grad = [array([[ 0.9796193 , -0.30203226,  0.88191098],
+       [ 0.97378824, -0.30203226,  0.88191098],
+       [ 0.9796193 , ...203226,  0.88191098],
+       [ 0.9796193 , -0.30203226,  0.88191098],
+       [ 0.9796193 , -0.30203226,  0.88191098]])]
+        out        = needle.Tensor([-0.766994  -0.7105    -0.5265013])
+python/needle/autograd.py:67: in gradient_as_tuple
+    output = self.gradient(out_grad, node)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        node       = needle.Tensor([-0.766994  -0.7105    -0.5265013])
+        out_grad   = needle.Tensor([ 0.97829074 -0.30162266  0.88071495])
+        self       = <needle.ops.ops_mathematic.Summation object at 0x7d003baac500>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Summation object at 0x7d003baac500>
+out_grad = needle.Tensor([ 0.97829074 -0.30162266  0.88071495])
+node = needle.Tensor([-0.766994  -0.7105    -0.5265013])
+
+    def gradient(self, out_grad, node):
+        ### BEGIN YOUR SOLUTION
+        shapes = list(node.inputs[0].shape)
+        axes = range(len(shapes)) if self.axes == None else self.axes
+>       for axis in axes:
+                    ^^^^
+E       TypeError: 'int' object is not iterable
+
+axes       = 0
+node       = needle.Tensor([-0.766994  -0.7105    -0.5265013])
+out_grad   = needle.Tensor([ 0.97829074 -0.30162266  0.88071495])
+self       = <needle.ops.ops_mathematic.Summation object at 0x7d003baac500>
+shapes     = [5, 3]
+
+python/needle/ops/ops_mathematic.py:230: TypeError
+____________________ test_summation_backward[cpu-shape2-1] _____________________
+
+shape = (8, 3, 2), axes = 1, device = cpu()
+
+    @pytest.mark.parametrize("shape, axes", SUMMATION_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_summation_backward(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+>       backward_check(ndl.summation, A, axes=axes)
+
+A          = needle.Tensor([[[ 1.2571155   1.7787892 ]
+  [ 0.97692966 -0.472893  ]
+  [ 1.3856629   1.1309735 ]]
+
+ [[-0.23845685  0....3]
+  [ 1.175274   -0.02697281]]
+
+ [[ 0.05634464 -0.22966217]
+  [-1.2457664   0.1854648 ]
+  [-0.26671386 -0.31800154]]])
+_A         = array([[[ 1.2571155 ,  1.7787892 ],
+        [ 0.97692966, -0.47289303],
+        [ 1.3856629 ,  1.1309735 ]],
+
+       [...  [[ 0.05634464, -0.22966217],
+        [-1.2457664 ,  0.1854648 ],
+        [-0.2667139 , -0.31800157]]], dtype=float32)
+axes       = 1
+device     = cpu()
+shape      = (8, 3, 2)
+
+tests/hw4/test_nd_backend.py:191: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/hw4/test_nd_backend.py:28: in backward_check
+    backward_grad = out.op.gradient_as_tuple(ndl.Tensor(c, device=args[0].device), out)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[ 1.2571155   1.7787892 ]
+  [ 0.97692966 -0.472893  ]
+  [ 1.3856629   1.1309735 ]]
+
+ [[-0.23845685  0...
+  [ 1.175274   -0.02697281]]
+
+ [[ 0.05634464 -0.22966217]
+  [-1.2457664   0.1854648 ]
+  [-0.26671386 -0.31800154]]]),)
+        c          = array([[-1.28237754,  1.4503455 ],
+       [-1.73917763, -0.92885193],
+       [ 0.97068872, -1.59182185],
+       [ 0.53...-0.79526456],
+       [-0.11231625,  1.36421335],
+       [ 0.05703132, -0.44432947],
+       [-0.76478755,  1.42819903]])
+        eps        = 1e-05
+        f          = <function summation at 0x7d01299f7ba0>
+        f1         = np.float64(-2.245690729734225)
+        f2         = np.float64(-2.245719247378238)
+        i          = 0
+        j          = 47
+        kwargs     = {'axes': 1}
+        num_args   = 1
+        numerical_grad = [array([[[-1.28411905,  1.45231511],
+        [-1.28411905,  1.45231511],
+        [-1.28411905,  1.45231511]],
+
+       ...3288]],
+
+       [[-0.76582616,  1.42801038],
+        [-0.76582616,  1.42801038],
+        [-0.76582616,  1.4258822 ]]])]
+        out        = needle.Tensor([[ 3.619708    2.4368696 ]
+ [ 0.5683019   4.0216413 ]
+ [ 1.2932744   0.06329054]
+ [-1.4859312   2.005837  ]
+ [ 0.9063595   0.75122166]
+ [-0.6476835  -0.33710006]
+ [-0.08712578 -1.1888998 ]
+ [-1.4561356  -0.36219895]])
+python/needle/autograd.py:67: in gradient_as_tuple
+    output = self.gradient(out_grad, node)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        node       = needle.Tensor([[ 3.619708    2.4368696 ]
+ [ 0.5683019   4.0216413 ]
+ [ 1.2932744   0.06329054]
+ [-1.4859312   2.005837  ]
+ [ 0.9063595   0.75122166]
+ [-0.6476835  -0.33710006]
+ [-0.08712578 -1.1888998 ]
+ [-1.4561356  -0.36219895]])
+        out_grad   = needle.Tensor([[-1.2823775   1.4503455 ]
+ [-1.7391776  -0.9288519 ]
+ [ 0.9706887  -1.5918218 ]
+ [ 0.53199524  1.245671  ]
+ [ 0.64864075 -0.79526454]
+ [-0.11231624  1.3642133 ]
+ [ 0.05703132 -0.44432947]
+ [-0.76478755  1.428199  ]])
+        self       = <needle.ops.ops_mathematic.Summation object at 0x7d003baaf920>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Summation object at 0x7d003baaf920>
+out_grad = needle.Tensor([[-1.2823775   1.4503455 ]
+ [-1.7391776  -0.9288519 ]
+ [ 0.9706887  -1.5918218 ]
+ [ 0.53199524  1.245671  ]
+ [ 0.64864075 -0.79526454]
+ [-0.11231624  1.3642133 ]
+ [ 0.05703132 -0.44432947]
+ [-0.76478755  1.428199  ]])
+node = needle.Tensor([[ 3.619708    2.4368696 ]
+ [ 0.5683019   4.0216413 ]
+ [ 1.2932744   0.06329054]
+ [-1.4859312   2.005837  ]
+ [ 0.9063595   0.75122166]
+ [-0.6476835  -0.33710006]
+ [-0.08712578 -1.1888998 ]
+ [-1.4561356  -0.36219895]])
+
+    def gradient(self, out_grad, node):
+        ### BEGIN YOUR SOLUTION
+        shapes = list(node.inputs[0].shape)
+        axes = range(len(shapes)) if self.axes == None else self.axes
+>       for axis in axes:
+                    ^^^^
+E       TypeError: 'int' object is not iterable
+
+axes       = 1
+node       = needle.Tensor([[ 3.619708    2.4368696 ]
+ [ 0.5683019   4.0216413 ]
+ [ 1.2932744   0.06329054]
+ [-1.4859312   2.005837  ]
+ [ 0.9063595   0.75122166]
+ [-0.6476835  -0.33710006]
+ [-0.08712578 -1.1888998 ]
+ [-1.4561356  -0.36219895]])
+out_grad   = needle.Tensor([[-1.2823775   1.4503455 ]
+ [-1.7391776  -0.9288519 ]
+ [ 0.9706887  -1.5918218 ]
+ [ 0.53199524  1.245671  ]
+ [ 0.64864075 -0.79526454]
+ [-0.11231624  1.3642133 ]
+ [ 0.05703132 -0.44432947]
+ [-0.76478755  1.428199  ]])
+self       = <needle.ops.ops_mathematic.Summation object at 0x7d003baaf920>
+shapes     = [8, 3, 2]
+
+python/needle/ops/ops_mathematic.py:230: TypeError
+____________________ test_summation_backward[cpu-shape3-2] _____________________
+
+shape = (8, 3, 2), axes = 2, device = cpu()
+
+    @pytest.mark.parametrize("shape, axes", SUMMATION_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_summation_backward(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+>       backward_check(ndl.summation, A, axes=axes)
+
+A          = needle.Tensor([[[-0.42389694  0.8514999 ]
+  [ 1.2843655   0.41561052]
+  [ 2.2930398  -0.02262507]]
+
+ [[-1.1791399  -0.... ]
+  [ 0.58287376  0.7526748 ]]
+
+ [[-0.4980525   0.2263798 ]
+  [-0.5305156  -0.39114535]
+  [ 0.24308126  1.0304061 ]]])
+_A         = array([[[-0.42389697,  0.8514999 ],
+        [ 1.2843655 ,  0.4156105 ],
+        [ 2.2930398 , -0.02262507]],
+
+       [...  [[-0.49805254,  0.2263798 ],
+        [-0.5305156 , -0.39114538],
+        [ 0.24308126,  1.0304061 ]]], dtype=float32)
+axes       = 2
+device     = cpu()
+shape      = (8, 3, 2)
+
+tests/hw4/test_nd_backend.py:191: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/hw4/test_nd_backend.py:28: in backward_check
+    backward_grad = out.op.gradient_as_tuple(ndl.Tensor(c, device=args[0].device), out)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[-0.42389694  0.8514999 ]
+  [ 1.2843655   0.41561052]
+  [ 2.2930398  -0.02262507]]
+
+ [[-1.1791399  -0...
+  [ 0.58287376  0.7526748 ]]
+
+ [[-0.4980525   0.2263798 ]
+  [-0.5305156  -0.39114535]
+  [ 0.24308126  1.0304061 ]]]),)
+        c          = array([[-1.42742278, -0.92912381, -0.36237938],
+       [ 1.36608848,  0.35763026,  1.58604805],
+       [-0.30664139, -...7672454,  1.66926069],
+       [ 0.35276007, -0.66973841, -1.18520704],
+       [-1.17584978,  1.190126  , -0.14738184]])
+        eps        = 1e-05
+        f          = <function summation at 0x7d01299f7ba0>
+        f1         = np.float64(-5.854173719036078)
+        f2         = np.float64(-5.854170767396213)
+        i          = 0
+        j          = 47
+        kwargs     = {'axes': 2}
+        num_args   = 1
+        numerical_grad = [array([[[-1.42723424, -1.42936126],
+        [-0.93038559, -0.92484758],
+        [-0.36287151, -0.36287151]],
+
+       ...1659]],
+
+       [[-1.17744662, -1.17569447],
+        [ 1.19174223,  1.18819537],
+        [-0.14758199, -0.14758199]]])]
+        out        = needle.Tensor([[ 0.42760295  1.699976    2.2704148 ]
+ [-1.2662436  -1.4708     -1.2472318 ]
+ [-2.3992321  -1.8330529  ...
+ [-0.78681195 -0.7035869  -2.1041868 ]
+ [ 0.569461    0.02130485  1.3355486 ]
+ [-0.27167273 -0.921661    1.2734873 ]])
+python/needle/autograd.py:67: in gradient_as_tuple
+    output = self.gradient(out_grad, node)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        node       = needle.Tensor([[ 0.42760295  1.699976    2.2704148 ]
+ [-1.2662436  -1.4708     -1.2472318 ]
+ [-2.3992321  -1.8330529  ...
+ [-0.78681195 -0.7035869  -2.1041868 ]
+ [ 0.569461    0.02130485  1.3355486 ]
+ [-0.27167273 -0.921661    1.2734873 ]])
+        out_grad   = needle.Tensor([[-1.4274228  -0.9291238  -0.36237937]
+ [ 1.3660885   0.35763025  1.586048  ]
+ [-0.3066414  -1.4592648  ...
+ [ 0.5975249  -0.37672454  1.6692607 ]
+ [ 0.35276008 -0.6697384  -1.185207  ]
+ [-1.1758498   1.190126   -0.14738184]])
+        self       = <needle.ops.ops_mathematic.Summation object at 0x7d003ba7cce0>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Summation object at 0x7d003ba7cce0>
+out_grad = needle.Tensor([[-1.4274228  -0.9291238  -0.36237937]
+ [ 1.3660885   0.35763025  1.586048  ]
+ [-0.3066414  -1.4592648  ...
+ [ 0.5975249  -0.37672454  1.6692607 ]
+ [ 0.35276008 -0.6697384  -1.185207  ]
+ [-1.1758498   1.190126   -0.14738184]])
+node = needle.Tensor([[ 0.42760295  1.699976    2.2704148 ]
+ [-1.2662436  -1.4708     -1.2472318 ]
+ [-2.3992321  -1.8330529  ...
+ [-0.78681195 -0.7035869  -2.1041868 ]
+ [ 0.569461    0.02130485  1.3355486 ]
+ [-0.27167273 -0.921661    1.2734873 ]])
+
+    def gradient(self, out_grad, node):
+        ### BEGIN YOUR SOLUTION
+        shapes = list(node.inputs[0].shape)
+        axes = range(len(shapes)) if self.axes == None else self.axes
+>       for axis in axes:
+                    ^^^^
+E       TypeError: 'int' object is not iterable
+
+axes       = 2
+node       = needle.Tensor([[ 0.42760295  1.699976    2.2704148 ]
+ [-1.2662436  -1.4708     -1.2472318 ]
+ [-2.3992321  -1.8330529  ...
+ [-0.78681195 -0.7035869  -2.1041868 ]
+ [ 0.569461    0.02130485  1.3355486 ]
+ [-0.27167273 -0.921661    1.2734873 ]])
+out_grad   = needle.Tensor([[-1.4274228  -0.9291238  -0.36237937]
+ [ 1.3660885   0.35763025  1.586048  ]
+ [-0.3066414  -1.4592648  ...
+ [ 0.5975249  -0.37672454  1.6692607 ]
+ [ 0.35276008 -0.6697384  -1.185207  ]
+ [-1.1758498   1.190126   -0.14738184]])
+self       = <needle.ops.ops_mathematic.Summation object at 0x7d003ba7cce0>
+shapes     = [8, 3, 2]
+
+python/needle/ops/ops_mathematic.py:230: TypeError
+____________________ test_summation_backward[cuda-shape1-0] ____________________
+
+shape = (5, 3), axes = 0, device = cuda()
+
+    @pytest.mark.parametrize("shape, axes", SUMMATION_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_summation_backward(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+>       backward_check(ndl.summation, A, axes=axes)
+
+A          = needle.Tensor([[-0.1203487  -1.5250406  -0.10352791]
+ [ 1.8576714  -0.23217203  1.2052398 ]
+ [ 0.8887145   0.7708414  -0.61790377]
+ [ 0.14626923  0.7474238  -0.01467989]
+ [ 0.7175262  -1.1380908   0.4594319 ]])
+_A         = array([[-0.1203487 , -1.5250406 , -0.10352791],
+       [ 1.8576714 , -0.23217203,  1.2052398 ],
+       [ 0.8887145 ,  ...90377],
+       [ 0.14626923,  0.7474238 , -0.01467989],
+       [ 0.7175262 , -1.1380908 ,  0.45943186]], dtype=float32)
+axes       = 0
+device     = cuda()
+shape      = (5, 3)
+
+tests/hw4/test_nd_backend.py:191: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/hw4/test_nd_backend.py:28: in backward_check
+    backward_grad = out.op.gradient_as_tuple(ndl.Tensor(c, device=args[0].device), out)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[-0.1203487  -1.5250406  -0.10352791]
+ [ 1.8576714  -0.23217203  1.2052398 ]
+ [ 0.8887145   0.7708414  -0.61790377]
+ [ 0.14626923  0.7474238  -0.01467989]
+ [ 0.7175262  -1.1380908   0.4594319 ]]),)
+        c          = array([ 0.86492562, -0.5685719 , -0.13818243])
+        eps        = 1e-05
+        f          = <function summation at 0x7d01299f7ba0>
+        f1         = np.float64(3.6730788607572094)
+        f2         = np.float64(3.6730816199225402)
+        i          = 0
+        j          = 14
+        kwargs     = {'axes': 0}
+        num_args   = 1
+        numerical_grad = [array([[ 0.86610022, -0.56934404, -0.13837008],
+       [ 0.86610022, -0.56934404, -0.13837008],
+       [ 0.86610022, ...934404, -0.13837008],
+       [ 0.86610022, -0.56934404, -0.13795827],
+       [ 0.86610022, -0.56934404, -0.13795827]])]
+        out        = needle.Tensor([ 3.4898326 -1.3770382  0.9285601])
+python/needle/autograd.py:67: in gradient_as_tuple
+    output = self.gradient(out_grad, node)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        node       = needle.Tensor([ 3.4898326 -1.3770382  0.9285601])
+        out_grad   = needle.Tensor([ 0.8649256  -0.5685719  -0.13818243])
+        self       = <needle.ops.ops_mathematic.Summation object at 0x7d003baacd10>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Summation object at 0x7d003baacd10>
+out_grad = needle.Tensor([ 0.8649256  -0.5685719  -0.13818243])
+node = needle.Tensor([ 3.4898326 -1.3770382  0.9285601])
+
+    def gradient(self, out_grad, node):
+        ### BEGIN YOUR SOLUTION
+        shapes = list(node.inputs[0].shape)
+        axes = range(len(shapes)) if self.axes == None else self.axes
+>       for axis in axes:
+                    ^^^^
+E       TypeError: 'int' object is not iterable
+
+axes       = 0
+node       = needle.Tensor([ 3.4898326 -1.3770382  0.9285601])
+out_grad   = needle.Tensor([ 0.8649256  -0.5685719  -0.13818243])
+self       = <needle.ops.ops_mathematic.Summation object at 0x7d003baacd10>
+shapes     = [5, 3]
+
+python/needle/ops/ops_mathematic.py:230: TypeError
+____________________ test_summation_backward[cuda-shape2-1] ____________________
+
+shape = (8, 3, 2), axes = 1, device = cuda()
+
+    @pytest.mark.parametrize("shape, axes", SUMMATION_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_summation_backward(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+>       backward_check(ndl.summation, A, axes=axes)
+
+A          = needle.Tensor([[[ 0.02258228  0.7159469 ]
+  [ 1.4280046   0.04938466]
+  [ 0.277153    0.9073988 ]]
+
+ [[-1.7968049  -0.... ]
+  [-0.16331597  1.5508778 ]]
+
+ [[-0.7730272   0.2436368 ]
+  [ 0.6098334   0.57733613]
+  [ 0.24750309  1.7347882 ]]])
+_A         = array([[[ 0.02258228,  0.7159469 ],
+        [ 1.4280046 ,  0.04938466],
+        [ 0.27715296,  0.9073988 ]],
+
+       [...  [[-0.7730272 ,  0.2436368 ],
+        [ 0.6098334 ,  0.57733613],
+        [ 0.24750309,  1.7347882 ]]], dtype=float32)
+axes       = 1
+device     = cuda()
+shape      = (8, 3, 2)
+
+tests/hw4/test_nd_backend.py:191: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/hw4/test_nd_backend.py:28: in backward_check
+    backward_grad = out.op.gradient_as_tuple(ndl.Tensor(c, device=args[0].device), out)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[ 0.02258228  0.7159469 ]
+  [ 1.4280046   0.04938466]
+  [ 0.277153    0.9073988 ]]
+
+ [[-1.7968049  -0...
+  [-0.16331597  1.5508778 ]]
+
+ [[-0.7730272   0.2436368 ]
+  [ 0.6098334   0.57733613]
+  [ 0.24750309  1.7347882 ]]]),)
+        c          = array([[ 1.97808523, -2.10939137],
+       [ 0.0146967 ,  0.07289008],
+       [ 0.33634784,  1.12971303],
+       [ 0.01...-0.76121954],
+       [ 0.73192888,  0.65431253],
+       [ 1.69228165, -0.85450624],
+       [-0.35046999, -0.64244955]])
+        eps        = 1e-05
+        f          = <function summation at 0x7d01299f7ba0>
+        f1         = np.float64(-3.2809940051362623)
+        f2         = np.float64(-3.2809811386959846)
+        i          = 0
+        j          = 47
+        kwargs     = {'axes': 1}
+        num_args   = 1
+        numerical_grad = [array([[[ 1.98077154, -2.11225599],
+        [ 1.98077154, -2.11225599],
+        [ 1.96898123, -2.11225599]],
+
+       ...6668]],
+
+       [[-0.35094594, -0.64332201],
+        [-0.35094594, -0.64332201],
+        [-0.3504237 , -0.64332201]]])]
+        out        = needle.Tensor([[ 1.7277398e+00  1.6727304e+00]
+ [-6.5985620e-01  1.0175824e-02]
+ [ 7.2903144e-01 -2.4748440e+00]
+ [ 4....04  1.5632931e+00]
+ [ 9.0821218e-01  2.4341617e+00]
+ [ 9.8911211e-02  5.1713729e-01]
+ [ 8.4309325e-02  2.5557611e+00]])
+python/needle/autograd.py:67: in gradient_as_tuple
+    output = self.gradient(out_grad, node)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        node       = needle.Tensor([[ 1.7277398e+00  1.6727304e+00]
+ [-6.5985620e-01  1.0175824e-02]
+ [ 7.2903144e-01 -2.4748440e+00]
+ [ 4....04  1.5632931e+00]
+ [ 9.0821218e-01  2.4341617e+00]
+ [ 9.8911211e-02  5.1713729e-01]
+ [ 8.4309325e-02  2.5557611e+00]])
+        out_grad   = needle.Tensor([[ 1.9780853  -2.1093915 ]
+ [ 0.0146967   0.07289008]
+ [ 0.33634785  1.129713  ]
+ [ 0.01987992 -0.21903647]
+ [ 0.09909772 -0.76121956]
+ [ 0.7319289   0.65431255]
+ [ 1.6922816  -0.85450625]
+ [-0.35047    -0.64244956]])
+        self       = <needle.ops.ops_mathematic.Summation object at 0x7d003baad040>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Summation object at 0x7d003baad040>
+out_grad = needle.Tensor([[ 1.9780853  -2.1093915 ]
+ [ 0.0146967   0.07289008]
+ [ 0.33634785  1.129713  ]
+ [ 0.01987992 -0.21903647]
+ [ 0.09909772 -0.76121956]
+ [ 0.7319289   0.65431255]
+ [ 1.6922816  -0.85450625]
+ [-0.35047    -0.64244956]])
+node = needle.Tensor([[ 1.7277398e+00  1.6727304e+00]
+ [-6.5985620e-01  1.0175824e-02]
+ [ 7.2903144e-01 -2.4748440e+00]
+ [ 4....04  1.5632931e+00]
+ [ 9.0821218e-01  2.4341617e+00]
+ [ 9.8911211e-02  5.1713729e-01]
+ [ 8.4309325e-02  2.5557611e+00]])
+
+    def gradient(self, out_grad, node):
+        ### BEGIN YOUR SOLUTION
+        shapes = list(node.inputs[0].shape)
+        axes = range(len(shapes)) if self.axes == None else self.axes
+>       for axis in axes:
+                    ^^^^
+E       TypeError: 'int' object is not iterable
+
+axes       = 1
+node       = needle.Tensor([[ 1.7277398e+00  1.6727304e+00]
+ [-6.5985620e-01  1.0175824e-02]
+ [ 7.2903144e-01 -2.4748440e+00]
+ [ 4....04  1.5632931e+00]
+ [ 9.0821218e-01  2.4341617e+00]
+ [ 9.8911211e-02  5.1713729e-01]
+ [ 8.4309325e-02  2.5557611e+00]])
+out_grad   = needle.Tensor([[ 1.9780853  -2.1093915 ]
+ [ 0.0146967   0.07289008]
+ [ 0.33634785  1.129713  ]
+ [ 0.01987992 -0.21903647]
+ [ 0.09909772 -0.76121956]
+ [ 0.7319289   0.65431255]
+ [ 1.6922816  -0.85450625]
+ [-0.35047    -0.64244956]])
+self       = <needle.ops.ops_mathematic.Summation object at 0x7d003baad040>
+shapes     = [8, 3, 2]
+
+python/needle/ops/ops_mathematic.py:230: TypeError
+____________________ test_summation_backward[cuda-shape3-2] ____________________
+
+shape = (8, 3, 2), axes = 2, device = cuda()
+
+    @pytest.mark.parametrize("shape, axes", SUMMATION_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_summation_backward(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+>       backward_check(ndl.summation, A, axes=axes)
+
+A          = needle.Tensor([[[-0.31651038 -0.55685735]
+  [ 0.17516482 -0.59294105]
+  [ 0.16579469 -1.4521552 ]]
+
+ [[-1.1660721  -1....9]
+  [ 1.0682702   0.87369984]]
+
+ [[-1.4355507   0.1892495 ]
+  [-1.1416229  -0.20496817]
+  [-0.13278429 -0.4402109 ]]])
+_A         = array([[[-0.3165104 , -0.55685735],
+        [ 0.17516482, -0.59294105],
+        [ 0.16579469, -1.4521552 ]],
+
+       [...  [[-1.4355507 ,  0.1892495 ],
+        [-1.1416229 , -0.20496817],
+        [-0.13278429, -0.44021094]]], dtype=float32)
+axes       = 2
+device     = cuda()
+shape      = (8, 3, 2)
+
+tests/hw4/test_nd_backend.py:191: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/hw4/test_nd_backend.py:28: in backward_check
+    backward_grad = out.op.gradient_as_tuple(ndl.Tensor(c, device=args[0].device), out)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[-0.31651038 -0.55685735]
+  [ 0.17516482 -0.59294105]
+  [ 0.16579469 -1.4521552 ]]
+
+ [[-1.1660721  -1...
+  [ 1.0682702   0.87369984]]
+
+ [[-1.4355507   0.1892495 ]
+  [-1.1416229  -0.20496817]
+  [-0.13278429 -0.4402109 ]]]),)
+        c          = array([[ 0.8286478 ,  0.04491751,  1.97075877],
+       [-0.63587435, -1.30128528, -0.74705432],
+       [ 1.29118656,  ...5579318,  0.79195079],
+       [-0.46331693,  0.78626659, -1.07966071],
+       [ 0.55414091,  1.40031508,  0.38172382]])
+        eps        = 1e-05
+        f          = <function summation at 0x7d01299f7ba0>
+        f1         = np.float64(-4.9316758921025965)
+        f2         = np.float64(-4.9316835141942725)
+        i          = 0
+        j          = 47
+        kwargs     = {'axes': 2}
+        num_args   = 1
+        numerical_grad = [array([[[ 0.82730356,  0.82977313],
+        [ 0.04497851,  0.04497851],
+        [ 1.97343512,  1.97343512]],
+
+       ...2692]],
+
+       [[ 0.55489345,  0.55489345],
+        [ 1.40221675,  1.39387023],
+        [ 0.38110458,  0.38110458]]])]
+        out        = needle.Tensor([[-0.8733678  -0.41777623 -1.2863605 ]
+ [-2.7558427  -0.15774459  0.675676  ]
+ [ 1.7372644  -0.79743975 ...
+ [ 2.7325518  -0.1369676  -0.08027595]
+ [-1.1898752  -2.0540318   1.9419701 ]
+ [-1.2463012  -1.3465911  -0.57299525]])
+python/needle/autograd.py:67: in gradient_as_tuple
+    output = self.gradient(out_grad, node)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        node       = needle.Tensor([[-0.8733678  -0.41777623 -1.2863605 ]
+ [-2.7558427  -0.15774459  0.675676  ]
+ [ 1.7372644  -0.79743975 ...
+ [ 2.7325518  -0.1369676  -0.08027595]
+ [-1.1898752  -2.0540318   1.9419701 ]
+ [-1.2463012  -1.3465911  -0.57299525]])
+        out_grad   = needle.Tensor([[ 0.8286478   0.04491751  1.9707588 ]
+ [-0.63587433 -1.3012853  -0.74705434]
+ [ 1.2911866   0.6756286  ...
+ [ 0.74715984 -1.9557931   0.79195076]
+ [-0.46331692  0.78626657 -1.0796607 ]
+ [ 0.5541409   1.400315    0.38172382]])
+        self       = <needle.ops.ops_mathematic.Summation object at 0x7d003baafe60>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Summation object at 0x7d003baafe60>
+out_grad = needle.Tensor([[ 0.8286478   0.04491751  1.9707588 ]
+ [-0.63587433 -1.3012853  -0.74705434]
+ [ 1.2911866   0.6756286  ...
+ [ 0.74715984 -1.9557931   0.79195076]
+ [-0.46331692  0.78626657 -1.0796607 ]
+ [ 0.5541409   1.400315    0.38172382]])
+node = needle.Tensor([[-0.8733678  -0.41777623 -1.2863605 ]
+ [-2.7558427  -0.15774459  0.675676  ]
+ [ 1.7372644  -0.79743975 ...
+ [ 2.7325518  -0.1369676  -0.08027595]
+ [-1.1898752  -2.0540318   1.9419701 ]
+ [-1.2463012  -1.3465911  -0.57299525]])
+
+    def gradient(self, out_grad, node):
+        ### BEGIN YOUR SOLUTION
+        shapes = list(node.inputs[0].shape)
+        axes = range(len(shapes)) if self.axes == None else self.axes
+>       for axis in axes:
+                    ^^^^
+E       TypeError: 'int' object is not iterable
+
+axes       = 2
+node       = needle.Tensor([[-0.8733678  -0.41777623 -1.2863605 ]
+ [-2.7558427  -0.15774459  0.675676  ]
+ [ 1.7372644  -0.79743975 ...
+ [ 2.7325518  -0.1369676  -0.08027595]
+ [-1.1898752  -2.0540318   1.9419701 ]
+ [-1.2463012  -1.3465911  -0.57299525]])
+out_grad   = needle.Tensor([[ 0.8286478   0.04491751  1.9707588 ]
+ [-0.63587433 -1.3012853  -0.74705434]
+ [ 1.2911866   0.6756286  ...
+ [ 0.74715984 -1.9557931   0.79195076]
+ [-0.46331692  0.78626657 -1.0796607 ]
+ [ 0.5541409   1.400315    0.38172382]])
+self       = <needle.ops.ops_mathematic.Summation object at 0x7d003baafe60>
+shapes     = [8, 3, 2]
+
+python/needle/ops/ops_mathematic.py:230: TypeError
+_______________________ test_transpose[cpu-axes0-shape0] _______________________
+
+shape = (1, 1, 1), axes = (0, 1), device = cpu()
+
+    @pytest.mark.parametrize("shape", TRANSPOSE_SHAPES)
+    @pytest.mark.parametrize("axes", TRANSPOSE_AXES)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_transpose(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+        if axes is None:
+            np_axes = (_A.ndim - 2, _A.ndim - 1)
+        else:
+            np_axes = axes
+>       np.testing.assert_allclose(np.swapaxes(_A, np_axes[0], np_axes[1]), ndl.transpose(A, axes=axes).numpy(), atol=1e-5, rtol=1e-5)
+                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = needle.Tensor([[[-0.8915784]]])
+_A         = array([[[-0.8915784]]], dtype=float32)
+axes       = (0, 1)
+device     = cpu()
+np_axes    = (0, 1)
+shape      = (1, 1, 1)
+
+tests/hw4/test_nd_backend.py:226: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_mathematic.py:170: in transpose
+    return Transpose(axes)(a)
+           ^^^^^^^^^^^^^^^^^^
+        a          = needle.Tensor([[[-0.8915784]]])
+        axes       = (0, 1)
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[-0.8915784]]]),)
+        self       = <needle.ops.ops_mathematic.Transpose object at 0x7d003baae5d0>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.Tensor([[[-0.8915784]]]),)
+        op         = <needle.ops.ops_mathematic.Transpose object at 0x7d003baae5d0>
+        tensor     = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'swapaxes'") raised in repr()] Tensor object at 0x7d003baae300>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'swapaxes'") raised in repr()] Tensor object at 0x7d003baae300>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Transpose object at 0x7d003baae5d0>
+a = NDArray([[[-0.8915784]]], device=cpu())
+
+    def compute(self, a):
+        ### BEGIN YOUR SOLUTION
+        if (self.axes):
+>         return array_api.swapaxes(a, self.axes[0], self.axes[1])
+                 ^^^^^^^^^^^^^^^^^^
+E         AttributeError: module 'needle.backend_ndarray' has no attribute 'swapaxes'
+
+a          = NDArray([[[-0.8915784]]], device=cpu())
+self       = <needle.ops.ops_mathematic.Transpose object at 0x7d003baae5d0>
+
+python/needle/ops/ops_mathematic.py:157: AttributeError
+_______________________ test_transpose[cpu-axes0-shape1] _______________________
+
+shape = (4, 5, 6), axes = (0, 1), device = cpu()
+
+    @pytest.mark.parametrize("shape", TRANSPOSE_SHAPES)
+    @pytest.mark.parametrize("axes", TRANSPOSE_AXES)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_transpose(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+        if axes is None:
+            np_axes = (_A.ndim - 2, _A.ndim - 1)
+        else:
+            np_axes = axes
+>       np.testing.assert_allclose(np.swapaxes(_A, np_axes[0], np_axes[1]), ndl.transpose(A, axes=axes).numpy(), atol=1e-5, rtol=1e-5)
+                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = needle.Tensor([[[-0.23002987  0.42615405  0.42854363  0.02079353 -0.598037
+   -0.30859315]
+  [ 1.2798208   1.3020768  ....5810264   0.57262874
+   -0.2943638 ]
+  [ 0.8136079   1.3184868   0.17044292  0.13645671 -0.42629206
+   -0.19551516]]])
+_A         = array([[[-0.23002987,  0.42615405,  0.42854363,  0.02079353,
+         -0.598037  , -0.30859315],
+        [ 1.2798208 ,...38 ],
+        [ 0.8136079 ,  1.3184868 ,  0.17044292,  0.13645671,
+         -0.42629206, -0.19551516]]], dtype=float32)
+axes       = (0, 1)
+device     = cpu()
+np_axes    = (0, 1)
+shape      = (4, 5, 6)
+
+tests/hw4/test_nd_backend.py:226: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_mathematic.py:170: in transpose
+    return Transpose(axes)(a)
+           ^^^^^^^^^^^^^^^^^^
+        a          = needle.Tensor([[[-0.23002987  0.42615405  0.42854363  0.02079353 -0.598037
+   -0.30859315]
+  [ 1.2798208   1.3020768  ....5810264   0.57262874
+   -0.2943638 ]
+  [ 0.8136079   1.3184868   0.17044292  0.13645671 -0.42629206
+   -0.19551516]]])
+        axes       = (0, 1)
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[-0.23002987  0.42615405  0.42854363  0.02079353 -0.598037
+   -0.30859315]
+  [ 1.2798208   1.3020768 ...810264   0.57262874
+   -0.2943638 ]
+  [ 0.8136079   1.3184868   0.17044292  0.13645671 -0.42629206
+   -0.19551516]]]),)
+        self       = <needle.ops.ops_mathematic.Transpose object at 0x7d003baae780>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.Tensor([[[-0.23002987  0.42615405  0.42854363  0.02079353 -0.598037
+   -0.30859315]
+  [ 1.2798208   1.3020768 ...810264   0.57262874
+   -0.2943638 ]
+  [ 0.8136079   1.3184868   0.17044292  0.13645671 -0.42629206
+   -0.19551516]]]),)
+        op         = <needle.ops.ops_mathematic.Transpose object at 0x7d003baae780>
+        tensor     = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'swapaxes'") raised in repr()] Tensor object at 0x7d003badb620>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'swapaxes'") raised in repr()] Tensor object at 0x7d003badb620>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Transpose object at 0x7d003baae780>
+a = NDArray([[[-0.23002987  0.42615405  0.42854363  0.02079353 -0.598037
+   -0.30859315]
+  [ 1.2798208   1.3020768  -1.343...7262874
+   -0.2943638 ]
+  [ 0.8136079   1.3184868   0.17044292  0.13645671 -0.42629206
+   -0.19551516]]], device=cpu())
+
+    def compute(self, a):
+        ### BEGIN YOUR SOLUTION
+        if (self.axes):
+>         return array_api.swapaxes(a, self.axes[0], self.axes[1])
+                 ^^^^^^^^^^^^^^^^^^
+E         AttributeError: module 'needle.backend_ndarray' has no attribute 'swapaxes'
+
+a          = NDArray([[[-0.23002987  0.42615405  0.42854363  0.02079353 -0.598037
+   -0.30859315]
+  [ 1.2798208   1.3020768  -1.343...7262874
+   -0.2943638 ]
+  [ 0.8136079   1.3184868   0.17044292  0.13645671 -0.42629206
+   -0.19551516]]], device=cpu())
+self       = <needle.ops.ops_mathematic.Transpose object at 0x7d003baae780>
+
+python/needle/ops/ops_mathematic.py:157: AttributeError
+_______________________ test_transpose[cpu-axes1-shape0] _______________________
+
+shape = (1, 1, 1), axes = (0, 2), device = cpu()
+
+    @pytest.mark.parametrize("shape", TRANSPOSE_SHAPES)
+    @pytest.mark.parametrize("axes", TRANSPOSE_AXES)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_transpose(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+        if axes is None:
+            np_axes = (_A.ndim - 2, _A.ndim - 1)
+        else:
+            np_axes = axes
+>       np.testing.assert_allclose(np.swapaxes(_A, np_axes[0], np_axes[1]), ndl.transpose(A, axes=axes).numpy(), atol=1e-5, rtol=1e-5)
+                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = needle.Tensor([[[0.06534544]]])
+_A         = array([[[0.06534544]]], dtype=float32)
+axes       = (0, 2)
+device     = cpu()
+np_axes    = (0, 2)
+shape      = (1, 1, 1)
+
+tests/hw4/test_nd_backend.py:226: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_mathematic.py:170: in transpose
+    return Transpose(axes)(a)
+           ^^^^^^^^^^^^^^^^^^
+        a          = needle.Tensor([[[0.06534544]]])
+        axes       = (0, 2)
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[0.06534544]]]),)
+        self       = <needle.ops.ops_mathematic.Transpose object at 0x7d003ba9e360>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.Tensor([[[0.06534544]]]),)
+        op         = <needle.ops.ops_mathematic.Transpose object at 0x7d003ba9e360>
+        tensor     = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'swapaxes'") raised in repr()] Tensor object at 0x7d003ba9e060>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'swapaxes'") raised in repr()] Tensor object at 0x7d003ba9e060>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Transpose object at 0x7d003ba9e360>
+a = NDArray([[[0.06534544]]], device=cpu())
+
+    def compute(self, a):
+        ### BEGIN YOUR SOLUTION
+        if (self.axes):
+>         return array_api.swapaxes(a, self.axes[0], self.axes[1])
+                 ^^^^^^^^^^^^^^^^^^
+E         AttributeError: module 'needle.backend_ndarray' has no attribute 'swapaxes'
+
+a          = NDArray([[[0.06534544]]], device=cpu())
+self       = <needle.ops.ops_mathematic.Transpose object at 0x7d003ba9e360>
+
+python/needle/ops/ops_mathematic.py:157: AttributeError
+_______________________ test_transpose[cpu-axes1-shape1] _______________________
+
+shape = (4, 5, 6), axes = (0, 2), device = cpu()
+
+    @pytest.mark.parametrize("shape", TRANSPOSE_SHAPES)
+    @pytest.mark.parametrize("axes", TRANSPOSE_AXES)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_transpose(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+        if axes is None:
+            np_axes = (_A.ndim - 2, _A.ndim - 1)
+        else:
+            np_axes = axes
+>       np.testing.assert_allclose(np.swapaxes(_A, np_axes[0], np_axes[1]), ndl.transpose(A, axes=axes).numpy(), atol=1e-5, rtol=1e-5)
+                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = needle.Tensor([[[-0.91022843  0.64738804 -1.7764558   1.5134803   0.69402885
+    0.09445285]
+  [ 1.1275321  -0.9888552...1.3010299  -0.60691965
+   -1.2607186 ]
+  [ 0.8013789   0.98249215  0.06927756  2.1394844   1.3729885
+   -1.2533095 ]]])
+_A         = array([[[-0.91022843,  0.64738804, -1.7764558 ,  1.5134803 ,
+          0.69402885,  0.09445285],
+        [ 1.1275321 ,...86 ],
+        [ 0.8013789 ,  0.98249215,  0.06927756,  2.1394844 ,
+          1.3729885 , -1.2533095 ]]], dtype=float32)
+axes       = (0, 2)
+device     = cpu()
+np_axes    = (0, 2)
+shape      = (4, 5, 6)
+
+tests/hw4/test_nd_backend.py:226: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_mathematic.py:170: in transpose
+    return Transpose(axes)(a)
+           ^^^^^^^^^^^^^^^^^^
+        a          = needle.Tensor([[[-0.91022843  0.64738804 -1.7764558   1.5134803   0.69402885
+    0.09445285]
+  [ 1.1275321  -0.9888552...1.3010299  -0.60691965
+   -1.2607186 ]
+  [ 0.8013789   0.98249215  0.06927756  2.1394844   1.3729885
+   -1.2533095 ]]])
+        axes       = (0, 2)
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[-0.91022843  0.64738804 -1.7764558   1.5134803   0.69402885
+    0.09445285]
+  [ 1.1275321  -0.988855...3010299  -0.60691965
+   -1.2607186 ]
+  [ 0.8013789   0.98249215  0.06927756  2.1394844   1.3729885
+   -1.2533095 ]]]),)
+        self       = <needle.ops.ops_mathematic.Transpose object at 0x7d003ba9f3e0>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.Tensor([[[-0.91022843  0.64738804 -1.7764558   1.5134803   0.69402885
+    0.09445285]
+  [ 1.1275321  -0.988855...3010299  -0.60691965
+   -1.2607186 ]
+  [ 0.8013789   0.98249215  0.06927756  2.1394844   1.3729885
+   -1.2533095 ]]]),)
+        op         = <needle.ops.ops_mathematic.Transpose object at 0x7d003ba9f3e0>
+        tensor     = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'swapaxes'") raised in repr()] Tensor object at 0x7d003ba9f170>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'swapaxes'") raised in repr()] Tensor object at 0x7d003ba9f170>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Transpose object at 0x7d003ba9f3e0>
+a = NDArray([[[-0.91022843  0.64738804 -1.7764558   1.5134803   0.69402885
+    0.09445285]
+  [ 1.1275321  -0.98885524  0.1...60691965
+   -1.2607186 ]
+  [ 0.8013789   0.98249215  0.06927756  2.1394844   1.3729885
+   -1.2533095 ]]], device=cpu())
+
+    def compute(self, a):
+        ### BEGIN YOUR SOLUTION
+        if (self.axes):
+>         return array_api.swapaxes(a, self.axes[0], self.axes[1])
+                 ^^^^^^^^^^^^^^^^^^
+E         AttributeError: module 'needle.backend_ndarray' has no attribute 'swapaxes'
+
+a          = NDArray([[[-0.91022843  0.64738804 -1.7764558   1.5134803   0.69402885
+    0.09445285]
+  [ 1.1275321  -0.98885524  0.1...60691965
+   -1.2607186 ]
+  [ 0.8013789   0.98249215  0.06927756  2.1394844   1.3729885
+   -1.2533095 ]]], device=cpu())
+self       = <needle.ops.ops_mathematic.Transpose object at 0x7d003ba9f3e0>
+
+python/needle/ops/ops_mathematic.py:157: AttributeError
+_______________________ test_transpose[cpu-None-shape0] ________________________
+
+shape = (1, 1, 1), axes = None, device = cpu()
+
+    @pytest.mark.parametrize("shape", TRANSPOSE_SHAPES)
+    @pytest.mark.parametrize("axes", TRANSPOSE_AXES)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_transpose(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+        if axes is None:
+            np_axes = (_A.ndim - 2, _A.ndim - 1)
+        else:
+            np_axes = axes
+>       np.testing.assert_allclose(np.swapaxes(_A, np_axes[0], np_axes[1]), ndl.transpose(A, axes=axes).numpy(), atol=1e-5, rtol=1e-5)
+                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = needle.Tensor([[[-0.69669217]]])
+_A         = array([[[-0.69669217]]], dtype=float32)
+axes       = None
+device     = cpu()
+np_axes    = (1, 2)
+shape      = (1, 1, 1)
+
+tests/hw4/test_nd_backend.py:226: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_mathematic.py:170: in transpose
+    return Transpose(axes)(a)
+           ^^^^^^^^^^^^^^^^^^
+        a          = needle.Tensor([[[-0.69669217]]])
+        axes       = None
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[-0.69669217]]]),)
+        self       = <needle.ops.ops_mathematic.Transpose object at 0x7d003bad9a60>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.Tensor([[[-0.69669217]]]),)
+        op         = <needle.ops.ops_mathematic.Transpose object at 0x7d003bad9a60>
+        tensor     = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'swapaxes'") raised in repr()] Tensor object at 0x7d003baac500>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'swapaxes'") raised in repr()] Tensor object at 0x7d003baac500>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Transpose object at 0x7d003bad9a60>
+a = NDArray([[[-0.69669217]]], device=cpu())
+
+    def compute(self, a):
+        ### BEGIN YOUR SOLUTION
+        if (self.axes):
+          return array_api.swapaxes(a, self.axes[0], self.axes[1])
+        else:
+>         return array_api.swapaxes(a, a.ndim-2, a.ndim-1)
+                 ^^^^^^^^^^^^^^^^^^
+E         AttributeError: module 'needle.backend_ndarray' has no attribute 'swapaxes'
+
+a          = NDArray([[[-0.69669217]]], device=cpu())
+self       = <needle.ops.ops_mathematic.Transpose object at 0x7d003bad9a60>
+
+python/needle/ops/ops_mathematic.py:159: AttributeError
+_______________________ test_transpose[cpu-None-shape1] ________________________
+
+shape = (4, 5, 6), axes = None, device = cpu()
+
+    @pytest.mark.parametrize("shape", TRANSPOSE_SHAPES)
+    @pytest.mark.parametrize("axes", TRANSPOSE_AXES)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_transpose(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+        if axes is None:
+            np_axes = (_A.ndim - 2, _A.ndim - 1)
+        else:
+            np_axes = axes
+>       np.testing.assert_allclose(np.swapaxes(_A, np_axes[0], np_axes[1]), ndl.transpose(A, axes=axes).numpy(), atol=1e-5, rtol=1e-5)
+                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = needle.Tensor([[[-0.93575615 -0.61421335 -0.45289811  0.96114016  0.23405291
+   -0.8781786 ]
+  [-0.40377602  0.3619311....9787657   0.12266027
+    0.46679342]
+  [ 1.1850599  -0.7730635   1.5469892  -0.71304744  0.92298496
+   -0.52088904]]])
+_A         = array([[[-0.93575615, -0.61421335, -0.45289811,  0.96114016,
+          0.23405291, -0.8781786 ],
+        [-0.40377602,...342],
+        [ 1.1850599 , -0.7730635 ,  1.5469892 , -0.71304744,
+          0.92298496, -0.52088904]]], dtype=float32)
+axes       = None
+device     = cpu()
+np_axes    = (1, 2)
+shape      = (4, 5, 6)
+
+tests/hw4/test_nd_backend.py:226: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_mathematic.py:170: in transpose
+    return Transpose(axes)(a)
+           ^^^^^^^^^^^^^^^^^^
+        a          = needle.Tensor([[[-0.93575615 -0.61421335 -0.45289811  0.96114016  0.23405291
+   -0.8781786 ]
+  [-0.40377602  0.3619311....9787657   0.12266027
+    0.46679342]
+  [ 1.1850599  -0.7730635   1.5469892  -0.71304744  0.92298496
+   -0.52088904]]])
+        axes       = None
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[-0.93575615 -0.61421335 -0.45289811  0.96114016  0.23405291
+   -0.8781786 ]
+  [-0.40377602  0.361931...787657   0.12266027
+    0.46679342]
+  [ 1.1850599  -0.7730635   1.5469892  -0.71304744  0.92298496
+   -0.52088904]]]),)
+        self       = <needle.ops.ops_mathematic.Transpose object at 0x7d003ba9ff20>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.Tensor([[[-0.93575615 -0.61421335 -0.45289811  0.96114016  0.23405291
+   -0.8781786 ]
+  [-0.40377602  0.361931...787657   0.12266027
+    0.46679342]
+  [ 1.1850599  -0.7730635   1.5469892  -0.71304744  0.92298496
+   -0.52088904]]]),)
+        op         = <needle.ops.ops_mathematic.Transpose object at 0x7d003ba9ff20>
+        tensor     = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'swapaxes'") raised in repr()] Tensor object at 0x7d003ba9fc50>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'swapaxes'") raised in repr()] Tensor object at 0x7d003ba9fc50>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Transpose object at 0x7d003ba9ff20>
+a = NDArray([[[-0.93575615 -0.61421335 -0.45289811  0.96114016  0.23405291
+   -0.8781786 ]
+  [-0.40377602  0.3619311  -0.0...2266027
+    0.46679342]
+  [ 1.1850599  -0.7730635   1.5469892  -0.71304744  0.92298496
+   -0.52088904]]], device=cpu())
+
+    def compute(self, a):
+        ### BEGIN YOUR SOLUTION
+        if (self.axes):
+          return array_api.swapaxes(a, self.axes[0], self.axes[1])
+        else:
+>         return array_api.swapaxes(a, a.ndim-2, a.ndim-1)
+                 ^^^^^^^^^^^^^^^^^^
+E         AttributeError: module 'needle.backend_ndarray' has no attribute 'swapaxes'
+
+a          = NDArray([[[-0.93575615 -0.61421335 -0.45289811  0.96114016  0.23405291
+   -0.8781786 ]
+  [-0.40377602  0.3619311  -0.0...2266027
+    0.46679342]
+  [ 1.1850599  -0.7730635   1.5469892  -0.71304744  0.92298496
+   -0.52088904]]], device=cpu())
+self       = <needle.ops.ops_mathematic.Transpose object at 0x7d003ba9ff20>
+
+python/needle/ops/ops_mathematic.py:159: AttributeError
+______________________ test_transpose[cuda-axes0-shape0] _______________________
+
+shape = (1, 1, 1), axes = (0, 1), device = cuda()
+
+    @pytest.mark.parametrize("shape", TRANSPOSE_SHAPES)
+    @pytest.mark.parametrize("axes", TRANSPOSE_AXES)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_transpose(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+        if axes is None:
+            np_axes = (_A.ndim - 2, _A.ndim - 1)
+        else:
+            np_axes = axes
+>       np.testing.assert_allclose(np.swapaxes(_A, np_axes[0], np_axes[1]), ndl.transpose(A, axes=axes).numpy(), atol=1e-5, rtol=1e-5)
+                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = needle.Tensor([[[0.03809374]]])
+_A         = array([[[0.03809374]]], dtype=float32)
+axes       = (0, 1)
+device     = cuda()
+np_axes    = (0, 1)
+shape      = (1, 1, 1)
+
+tests/hw4/test_nd_backend.py:226: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_mathematic.py:170: in transpose
+    return Transpose(axes)(a)
+           ^^^^^^^^^^^^^^^^^^
+        a          = needle.Tensor([[[0.03809374]]])
+        axes       = (0, 1)
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[0.03809374]]]),)
+        self       = <needle.ops.ops_mathematic.Transpose object at 0x7d003ba9ebd0>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.Tensor([[[0.03809374]]]),)
+        op         = <needle.ops.ops_mathematic.Transpose object at 0x7d003ba9ebd0>
+        tensor     = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'swapaxes'") raised in repr()] Tensor object at 0x7d003ba9fbf0>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'swapaxes'") raised in repr()] Tensor object at 0x7d003ba9fbf0>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Transpose object at 0x7d003ba9ebd0>
+a = NDArray([[[0.03809374]]], device=cuda())
+
+    def compute(self, a):
+        ### BEGIN YOUR SOLUTION
+        if (self.axes):
+>         return array_api.swapaxes(a, self.axes[0], self.axes[1])
+                 ^^^^^^^^^^^^^^^^^^
+E         AttributeError: module 'needle.backend_ndarray' has no attribute 'swapaxes'
+
+a          = NDArray([[[0.03809374]]], device=cuda())
+self       = <needle.ops.ops_mathematic.Transpose object at 0x7d003ba9ebd0>
+
+python/needle/ops/ops_mathematic.py:157: AttributeError
+______________________ test_transpose[cuda-axes0-shape1] _______________________
+
+shape = (4, 5, 6), axes = (0, 1), device = cuda()
+
+    @pytest.mark.parametrize("shape", TRANSPOSE_SHAPES)
+    @pytest.mark.parametrize("axes", TRANSPOSE_AXES)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_transpose(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+        if axes is None:
+            np_axes = (_A.ndim - 2, _A.ndim - 1)
+        else:
+            np_axes = axes
+>       np.testing.assert_allclose(np.swapaxes(_A, np_axes[0], np_axes[1]), ndl.transpose(A, axes=axes).numpy(), atol=1e-5, rtol=1e-5)
+                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = needle.Tensor([[[ 0.9778864   0.07981496 -1.6533154  -0.28263307 -0.51364565
+    0.08389966]
+  [-0.5758165  -0.0556547...1.862709   -0.3764521
+    2.638757  ]
+  [ 0.11819558  0.84113216 -0.40530366 -0.4401012  -0.16526793
+   -0.31185058]]])
+_A         = array([[[ 0.9778864 ,  0.07981496, -1.6533154 , -0.28263307,
+         -0.51364565,  0.08389966],
+        [-0.5758165 ,...7  ],
+        [ 0.11819558,  0.84113216, -0.40530366, -0.4401012 ,
+         -0.16526793, -0.31185058]]], dtype=float32)
+axes       = (0, 1)
+device     = cuda()
+np_axes    = (0, 1)
+shape      = (4, 5, 6)
+
+tests/hw4/test_nd_backend.py:226: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_mathematic.py:170: in transpose
+    return Transpose(axes)(a)
+           ^^^^^^^^^^^^^^^^^^
+        a          = needle.Tensor([[[ 0.9778864   0.07981496 -1.6533154  -0.28263307 -0.51364565
+    0.08389966]
+  [-0.5758165  -0.0556547...1.862709   -0.3764521
+    2.638757  ]
+  [ 0.11819558  0.84113216 -0.40530366 -0.4401012  -0.16526793
+   -0.31185058]]])
+        axes       = (0, 1)
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[ 0.9778864   0.07981496 -1.6533154  -0.28263307 -0.51364565
+    0.08389966]
+  [-0.5758165  -0.055654...862709   -0.3764521
+    2.638757  ]
+  [ 0.11819558  0.84113216 -0.40530366 -0.4401012  -0.16526793
+   -0.31185058]]]),)
+        self       = <needle.ops.ops_mathematic.Transpose object at 0x7d003bab4650>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.Tensor([[[ 0.9778864   0.07981496 -1.6533154  -0.28263307 -0.51364565
+    0.08389966]
+  [-0.5758165  -0.055654...862709   -0.3764521
+    2.638757  ]
+  [ 0.11819558  0.84113216 -0.40530366 -0.4401012  -0.16526793
+   -0.31185058]]]),)
+        op         = <needle.ops.ops_mathematic.Transpose object at 0x7d003bab4650>
+        tensor     = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'swapaxes'") raised in repr()] Tensor object at 0x7d003bab59d0>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'swapaxes'") raised in repr()] Tensor object at 0x7d003bab59d0>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Transpose object at 0x7d003bab4650>
+a = NDArray([[[ 0.9778864   0.07981496 -1.6533154  -0.28263307 -0.51364565
+    0.08389966]
+  [-0.5758165  -0.05565479 -0.7...764521
+    2.638757  ]
+  [ 0.11819558  0.84113216 -0.40530366 -0.4401012  -0.16526793
+   -0.31185058]]], device=cuda())
+
+    def compute(self, a):
+        ### BEGIN YOUR SOLUTION
+        if (self.axes):
+>         return array_api.swapaxes(a, self.axes[0], self.axes[1])
+                 ^^^^^^^^^^^^^^^^^^
+E         AttributeError: module 'needle.backend_ndarray' has no attribute 'swapaxes'
+
+a          = NDArray([[[ 0.9778864   0.07981496 -1.6533154  -0.28263307 -0.51364565
+    0.08389966]
+  [-0.5758165  -0.05565479 -0.7...764521
+    2.638757  ]
+  [ 0.11819558  0.84113216 -0.40530366 -0.4401012  -0.16526793
+   -0.31185058]]], device=cuda())
+self       = <needle.ops.ops_mathematic.Transpose object at 0x7d003bab4650>
+
+python/needle/ops/ops_mathematic.py:157: AttributeError
+______________________ test_transpose[cuda-axes1-shape0] _______________________
+
+shape = (1, 1, 1), axes = (0, 2), device = cuda()
+
+    @pytest.mark.parametrize("shape", TRANSPOSE_SHAPES)
+    @pytest.mark.parametrize("axes", TRANSPOSE_AXES)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_transpose(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+        if axes is None:
+            np_axes = (_A.ndim - 2, _A.ndim - 1)
+        else:
+            np_axes = axes
+>       np.testing.assert_allclose(np.swapaxes(_A, np_axes[0], np_axes[1]), ndl.transpose(A, axes=axes).numpy(), atol=1e-5, rtol=1e-5)
+                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = needle.Tensor([[[0.26994687]]])
+_A         = array([[[0.26994687]]], dtype=float32)
+axes       = (0, 2)
+device     = cuda()
+np_axes    = (0, 2)
+shape      = (1, 1, 1)
+
+tests/hw4/test_nd_backend.py:226: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_mathematic.py:170: in transpose
+    return Transpose(axes)(a)
+           ^^^^^^^^^^^^^^^^^^
+        a          = needle.Tensor([[[0.26994687]]])
+        axes       = (0, 2)
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[0.26994687]]]),)
+        self       = <needle.ops.ops_mathematic.Transpose object at 0x7d003ba9f050>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.Tensor([[[0.26994687]]]),)
+        op         = <needle.ops.ops_mathematic.Transpose object at 0x7d003ba9f050>
+        tensor     = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'swapaxes'") raised in repr()] Tensor object at 0x7d003ba9fb90>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'swapaxes'") raised in repr()] Tensor object at 0x7d003ba9fb90>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Transpose object at 0x7d003ba9f050>
+a = NDArray([[[0.26994687]]], device=cuda())
+
+    def compute(self, a):
+        ### BEGIN YOUR SOLUTION
+        if (self.axes):
+>         return array_api.swapaxes(a, self.axes[0], self.axes[1])
+                 ^^^^^^^^^^^^^^^^^^
+E         AttributeError: module 'needle.backend_ndarray' has no attribute 'swapaxes'
+
+a          = NDArray([[[0.26994687]]], device=cuda())
+self       = <needle.ops.ops_mathematic.Transpose object at 0x7d003ba9f050>
+
+python/needle/ops/ops_mathematic.py:157: AttributeError
+______________________ test_transpose[cuda-axes1-shape1] _______________________
+
+shape = (4, 5, 6), axes = (0, 2), device = cuda()
+
+    @pytest.mark.parametrize("shape", TRANSPOSE_SHAPES)
+    @pytest.mark.parametrize("axes", TRANSPOSE_AXES)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_transpose(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+        if axes is None:
+            np_axes = (_A.ndim - 2, _A.ndim - 1)
+        else:
+            np_axes = axes
+>       np.testing.assert_allclose(np.swapaxes(_A, np_axes[0], np_axes[1]), ndl.transpose(A, axes=axes).numpy(), atol=1e-5, rtol=1e-5)
+                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = needle.Tensor([[[ 2.0156775   0.29399768  1.3641229   1.522246    0.7832116
+   -0.15208119]
+  [ 1.6932101   1.2563031 ...  1.3820337   0.5095096
+   -0.13911654]
+  [-0.48825276 -1.4051776   0.22937068 -0.49968913  0.042238
+   -1.1865976 ]]])
+_A         = array([[[ 2.0156775 ,  0.29399768,  1.3641229 ,  1.522246  ,
+          0.7832116 , -0.15208119],
+        [ 1.6932101 ,...654],
+        [-0.48825276, -1.4051776 ,  0.22937068, -0.49968913,
+          0.042238  , -1.1865976 ]]], dtype=float32)
+axes       = (0, 2)
+device     = cuda()
+np_axes    = (0, 2)
+shape      = (4, 5, 6)
+
+tests/hw4/test_nd_backend.py:226: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_mathematic.py:170: in transpose
+    return Transpose(axes)(a)
+           ^^^^^^^^^^^^^^^^^^
+        a          = needle.Tensor([[[ 2.0156775   0.29399768  1.3641229   1.522246    0.7832116
+   -0.15208119]
+  [ 1.6932101   1.2563031 ...  1.3820337   0.5095096
+   -0.13911654]
+  [-0.48825276 -1.4051776   0.22937068 -0.49968913  0.042238
+   -1.1865976 ]]])
+        axes       = (0, 2)
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[ 2.0156775   0.29399768  1.3641229   1.522246    0.7832116
+   -0.15208119]
+  [ 1.6932101   1.2563031...1.3820337   0.5095096
+   -0.13911654]
+  [-0.48825276 -1.4051776   0.22937068 -0.49968913  0.042238
+   -1.1865976 ]]]),)
+        self       = <needle.ops.ops_mathematic.Transpose object at 0x7d003baae5d0>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.Tensor([[[ 2.0156775   0.29399768  1.3641229   1.522246    0.7832116
+   -0.15208119]
+  [ 1.6932101   1.2563031...1.3820337   0.5095096
+   -0.13911654]
+  [-0.48825276 -1.4051776   0.22937068 -0.49968913  0.042238
+   -1.1865976 ]]]),)
+        op         = <needle.ops.ops_mathematic.Transpose object at 0x7d003baae5d0>
+        tensor     = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'swapaxes'") raised in repr()] Tensor object at 0x7d003baac500>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'swapaxes'") raised in repr()] Tensor object at 0x7d003baac500>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Transpose object at 0x7d003baae5d0>
+a = NDArray([[[ 2.0156775   0.29399768  1.3641229   1.522246    0.7832116
+   -0.15208119]
+  [ 1.6932101   1.2563031   0.14....5095096
+   -0.13911654]
+  [-0.48825276 -1.4051776   0.22937068 -0.49968913  0.042238
+   -1.1865976 ]]], device=cuda())
+
+    def compute(self, a):
+        ### BEGIN YOUR SOLUTION
+        if (self.axes):
+>         return array_api.swapaxes(a, self.axes[0], self.axes[1])
+                 ^^^^^^^^^^^^^^^^^^
+E         AttributeError: module 'needle.backend_ndarray' has no attribute 'swapaxes'
+
+a          = NDArray([[[ 2.0156775   0.29399768  1.3641229   1.522246    0.7832116
+   -0.15208119]
+  [ 1.6932101   1.2563031   0.14....5095096
+   -0.13911654]
+  [-0.48825276 -1.4051776   0.22937068 -0.49968913  0.042238
+   -1.1865976 ]]], device=cuda())
+self       = <needle.ops.ops_mathematic.Transpose object at 0x7d003baae5d0>
+
+python/needle/ops/ops_mathematic.py:157: AttributeError
+_______________________ test_transpose[cuda-None-shape0] _______________________
+
+shape = (1, 1, 1), axes = None, device = cuda()
+
+    @pytest.mark.parametrize("shape", TRANSPOSE_SHAPES)
+    @pytest.mark.parametrize("axes", TRANSPOSE_AXES)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_transpose(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+        if axes is None:
+            np_axes = (_A.ndim - 2, _A.ndim - 1)
+        else:
+            np_axes = axes
+>       np.testing.assert_allclose(np.swapaxes(_A, np_axes[0], np_axes[1]), ndl.transpose(A, axes=axes).numpy(), atol=1e-5, rtol=1e-5)
+                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = needle.Tensor([[[-0.4497797]]])
+_A         = array([[[-0.4497797]]], dtype=float32)
+axes       = None
+device     = cuda()
+np_axes    = (1, 2)
+shape      = (1, 1, 1)
+
+tests/hw4/test_nd_backend.py:226: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_mathematic.py:170: in transpose
+    return Transpose(axes)(a)
+           ^^^^^^^^^^^^^^^^^^
+        a          = needle.Tensor([[[-0.4497797]]])
+        axes       = None
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[-0.4497797]]]),)
+        self       = <needle.ops.ops_mathematic.Transpose object at 0x7d003bab6de0>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.Tensor([[[-0.4497797]]]),)
+        op         = <needle.ops.ops_mathematic.Transpose object at 0x7d003bab6de0>
+        tensor     = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'swapaxes'") raised in repr()] Tensor object at 0x7d003bab6ab0>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'swapaxes'") raised in repr()] Tensor object at 0x7d003bab6ab0>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Transpose object at 0x7d003bab6de0>
+a = NDArray([[[-0.4497797]]], device=cuda())
+
+    def compute(self, a):
+        ### BEGIN YOUR SOLUTION
+        if (self.axes):
+          return array_api.swapaxes(a, self.axes[0], self.axes[1])
+        else:
+>         return array_api.swapaxes(a, a.ndim-2, a.ndim-1)
+                 ^^^^^^^^^^^^^^^^^^
+E         AttributeError: module 'needle.backend_ndarray' has no attribute 'swapaxes'
+
+a          = NDArray([[[-0.4497797]]], device=cuda())
+self       = <needle.ops.ops_mathematic.Transpose object at 0x7d003bab6de0>
+
+python/needle/ops/ops_mathematic.py:159: AttributeError
+_______________________ test_transpose[cuda-None-shape1] _______________________
+
+shape = (4, 5, 6), axes = None, device = cuda()
+
+    @pytest.mark.parametrize("shape", TRANSPOSE_SHAPES)
+    @pytest.mark.parametrize("axes", TRANSPOSE_AXES)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_transpose(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+        if axes is None:
+            np_axes = (_A.ndim - 2, _A.ndim - 1)
+        else:
+            np_axes = axes
+>       np.testing.assert_allclose(np.swapaxes(_A, np_axes[0], np_axes[1]), ndl.transpose(A, axes=axes).numpy(), atol=1e-5, rtol=1e-5)
+                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = needle.Tensor([[[-4.32244986e-01  6.26861870e-01 -1.80563629e+00  6.71942651e-01
+   -8.02810416e-02  1.66190493e+00]
+ ...66648531e-01]
+  [-1.49845636e+00  1.16017960e-01 -4.71417069e-01  3.20715189e-01
+   -7.65091628e-02 -6.89490438e-01]]])
+_A         = array([[[-4.32244986e-01,  6.26861870e-01, -1.80563629e+00,
+          6.71942651e-01, -8.02810416e-02,  1.66190493e+00...,  1.16017960e-01, -4.71417069e-01,
+          3.20715189e-01, -7.65091628e-02, -6.89490438e-01]]],
+      dtype=float32)
+axes       = None
+device     = cuda()
+np_axes    = (1, 2)
+shape      = (4, 5, 6)
+
+tests/hw4/test_nd_backend.py:226: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_mathematic.py:170: in transpose
+    return Transpose(axes)(a)
+           ^^^^^^^^^^^^^^^^^^
+        a          = needle.Tensor([[[-4.32244986e-01  6.26861870e-01 -1.80563629e+00  6.71942651e-01
+   -8.02810416e-02  1.66190493e+00]
+ ...66648531e-01]
+  [-1.49845636e+00  1.16017960e-01 -4.71417069e-01  3.20715189e-01
+   -7.65091628e-02 -6.89490438e-01]]])
+        axes       = None
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[-4.32244986e-01  6.26861870e-01 -1.80563629e+00  6.71942651e-01
+   -8.02810416e-02  1.66190493e+00]
+...648531e-01]
+  [-1.49845636e+00  1.16017960e-01 -4.71417069e-01  3.20715189e-01
+   -7.65091628e-02 -6.89490438e-01]]]),)
+        self       = <needle.ops.ops_mathematic.Transpose object at 0x7d003bab5f10>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.Tensor([[[-4.32244986e-01  6.26861870e-01 -1.80563629e+00  6.71942651e-01
+   -8.02810416e-02  1.66190493e+00]
+...648531e-01]
+  [-1.49845636e+00  1.16017960e-01 -4.71417069e-01  3.20715189e-01
+   -7.65091628e-02 -6.89490438e-01]]]),)
+        op         = <needle.ops.ops_mathematic.Transpose object at 0x7d003bab5f10>
+        tensor     = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'swapaxes'") raised in repr()] Tensor object at 0x7d003bab6d50>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'swapaxes'") raised in repr()] Tensor object at 0x7d003bab6d50>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_mathematic.Transpose object at 0x7d003bab5f10>
+a = NDArray([[[-4.32244986e-01  6.26861870e-01 -1.80563629e+00  6.71942651e-01
+   -8.02810416e-02  1.66190493e+00]
+  [-9.0... [-1.49845636e+00  1.16017960e-01 -4.71417069e-01  3.20715189e-01
+   -7.65091628e-02 -6.89490438e-01]]], device=cuda())
+
+    def compute(self, a):
+        ### BEGIN YOUR SOLUTION
+        if (self.axes):
+          return array_api.swapaxes(a, self.axes[0], self.axes[1])
+        else:
+>         return array_api.swapaxes(a, a.ndim-2, a.ndim-1)
+                 ^^^^^^^^^^^^^^^^^^
+E         AttributeError: module 'needle.backend_ndarray' has no attribute 'swapaxes'
+
+a          = NDArray([[[-4.32244986e-01  6.26861870e-01 -1.80563629e+00  6.71942651e-01
+   -8.02810416e-02  1.66190493e+00]
+  [-9.0... [-1.49845636e+00  1.16017960e-01 -4.71417069e-01  3.20715189e-01
+   -7.65091628e-02 -6.89490438e-01]]], device=cuda())
+self       = <needle.ops.ops_mathematic.Transpose object at 0x7d003bab5f10>
+
+python/needle/ops/ops_mathematic.py:159: AttributeError
+_______________________ test_logsumexp[cpu-shape0-None] ________________________
+
+shape = (1, 1, 1), axes = None, device = cpu()
+
+    @pytest.mark.parametrize("shape, axes", SUMMATION_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_logsumexp(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+        A_t = torch.Tensor(_A)
+        if axes is None:
+            t_axes = tuple(list(range(len(shape))))
+        else:
+            t_axes = axes
+>       np.testing.assert_allclose(torch.logsumexp(A_t, dim=t_axes).numpy(), ndl.logsumexp(A, axes=axes).numpy(), atol=1e-5, rtol=1e-5)
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = needle.Tensor([[[1.8870246]]])
+A_t        = tensor([[[1.8870]]])
+_A         = array([[[1.8870246]]], dtype=float32)
+axes       = None
+device     = cpu()
+shape      = (1, 1, 1)
+t_axes     = (0, 1, 2)
+
+tests/hw4/test_nd_backend.py:239: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_logarithmic.py:61: in logsumexp
+    return LogSumExp(axes=axes)(a)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+        a          = needle.Tensor([[[1.8870246]]])
+        axes       = None
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[1.8870246]]]),)
+        self       = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003ba9f500>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.Tensor([[[1.8870246]]]),)
+        op         = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003ba9f500>
+        tensor     = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'max'") raised in repr()] Tensor object at 0x7d003ba9e3f0>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'max'") raised in repr()] Tensor object at 0x7d003ba9e3f0>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003ba9f500>
+Z = NDArray([[[1.8870246]]], device=cpu())
+
+    def compute(self, Z: NDArray) -> NDArray:
+        ### BEGIN YOUR SOLUTION
+>       maxz = array_api.max(Z, axis=self.axes, keepdims=True)
+               ^^^^^^^^^^^^^
+E       AttributeError: module 'needle.backend_ndarray' has no attribute 'max'
+
+Z          = NDArray([[[1.8870246]]], device=cpu())
+self       = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003ba9f500>
+
+python/needle/ops/ops_logarithmic.py:40: AttributeError
+_________________________ test_logsumexp[cpu-shape1-0] _________________________
+
+shape = (5, 3), axes = 0, device = cpu()
+
+    @pytest.mark.parametrize("shape, axes", SUMMATION_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_logsumexp(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+        A_t = torch.Tensor(_A)
+        if axes is None:
+            t_axes = tuple(list(range(len(shape))))
+        else:
+            t_axes = axes
+>       np.testing.assert_allclose(torch.logsumexp(A_t, dim=t_axes).numpy(), ndl.logsumexp(A, axes=axes).numpy(), atol=1e-5, rtol=1e-5)
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = needle.Tensor([[-1.4686818   1.5394609   0.46706542]
+ [-2.1180692   0.095046   -0.2642157 ]
+ [-0.32524756  0.70726275 -0.6719159 ]
+ [-1.8796829   0.6002251   0.4974558 ]
+ [-0.5366705  -0.53319454 -0.18542138]])
+A_t        = tensor([[-1.4687,  1.5395,  0.4671],
+        [-2.1181,  0.0950, -0.2642],
+        [-0.3252,  0.7073, -0.6719],
+        [-1.8797,  0.6002,  0.4975],
+        [-0.5367, -0.5332, -0.1854]])
+_A         = array([[-1.4686818 ,  1.5394609 ,  0.46706542],
+       [-2.1180692 ,  0.095046  , -0.2642157 ],
+       [-0.32524756,  ...9159 ],
+       [-1.8796829 ,  0.6002251 ,  0.4974558 ],
+       [-0.5366705 , -0.53319454, -0.18542138]], dtype=float32)
+axes       = 0
+device     = cpu()
+shape      = (5, 3)
+t_axes     = 0
+
+tests/hw4/test_nd_backend.py:239: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_logarithmic.py:61: in logsumexp
+    return LogSumExp(axes=axes)(a)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+        a          = needle.Tensor([[-1.4686818   1.5394609   0.46706542]
+ [-2.1180692   0.095046   -0.2642157 ]
+ [-0.32524756  0.70726275 -0.6719159 ]
+ [-1.8796829   0.6002251   0.4974558 ]
+ [-0.5366705  -0.53319454 -0.18542138]])
+        axes       = 0
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[-1.4686818   1.5394609   0.46706542]
+ [-2.1180692   0.095046   -0.2642157 ]
+ [-0.32524756  0.70726275 -0.6719159 ]
+ [-1.8796829   0.6002251   0.4974558 ]
+ [-0.5366705  -0.53319454 -0.18542138]]),)
+        self       = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bab64b0>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.Tensor([[-1.4686818   1.5394609   0.46706542]
+ [-2.1180692   0.095046   -0.2642157 ]
+ [-0.32524756  0.70726275 -0.6719159 ]
+ [-1.8796829   0.6002251   0.4974558 ]
+ [-0.5366705  -0.53319454 -0.18542138]]),)
+        op         = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bab64b0>
+        tensor     = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'max'") raised in repr()] Tensor object at 0x7d003bab4cb0>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'max'") raised in repr()] Tensor object at 0x7d003bab4cb0>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bab64b0>
+Z = NDArray([[-1.4686818   1.5394609   0.46706542]
+ [-2.1180692   0.095046   -0.2642157 ]
+ [-0.32524756  0.70726275 -0.6719159 ]
+ [-1.8796829   0.6002251   0.4974558 ]
+ [-0.5366705  -0.53319454 -0.18542138]], device=cpu())
+
+    def compute(self, Z: NDArray) -> NDArray:
+        ### BEGIN YOUR SOLUTION
+>       maxz = array_api.max(Z, axis=self.axes, keepdims=True)
+               ^^^^^^^^^^^^^
+E       AttributeError: module 'needle.backend_ndarray' has no attribute 'max'
+
+Z          = NDArray([[-1.4686818   1.5394609   0.46706542]
+ [-2.1180692   0.095046   -0.2642157 ]
+ [-0.32524756  0.70726275 -0.6719159 ]
+ [-1.8796829   0.6002251   0.4974558 ]
+ [-0.5366705  -0.53319454 -0.18542138]], device=cpu())
+self       = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bab64b0>
+
+python/needle/ops/ops_logarithmic.py:40: AttributeError
+_________________________ test_logsumexp[cpu-shape2-1] _________________________
+
+shape = (8, 3, 2), axes = 1, device = cpu()
+
+    @pytest.mark.parametrize("shape, axes", SUMMATION_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_logsumexp(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+        A_t = torch.Tensor(_A)
+        if axes is None:
+            t_axes = tuple(list(range(len(shape))))
+        else:
+            t_axes = axes
+>       np.testing.assert_allclose(torch.logsumexp(A_t, dim=t_axes).numpy(), ndl.logsumexp(A, axes=axes).numpy(), atol=1e-5, rtol=1e-5)
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = needle.Tensor([[[-0.64573014 -0.18989763]
+  [ 0.06425801  1.6373779 ]
+  [-0.77092874 -0.8805883 ]]
+
+ [[-2.1338394  -0.... ]
+  [ 0.5479147  -1.2947313 ]]
+
+ [[-0.33982575 -1.4803531 ]
+  [ 0.22382198  0.6902278 ]
+  [ 0.146406    0.6197508 ]]])
+A_t        = tensor([[[-0.6457, -0.1899],
+         [ 0.0643,  1.6374],
+         [-0.7709, -0.8806]],
+
+        [[-2.1338, -0.1627],
+...         [ 0.5479, -1.2947]],
+
+        [[-0.3398, -1.4804],
+         [ 0.2238,  0.6902],
+         [ 0.1464,  0.6198]]])
+_A         = array([[[-0.64573014, -0.18989763],
+        [ 0.06425801,  1.6373779 ],
+        [-0.77092874, -0.8805883 ]],
+
+       [...  [[-0.33982575, -1.4803531 ],
+        [ 0.22382198,  0.6902278 ],
+        [ 0.146406  ,  0.6197508 ]]], dtype=float32)
+axes       = 1
+device     = cpu()
+shape      = (8, 3, 2)
+t_axes     = 1
+
+tests/hw4/test_nd_backend.py:239: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_logarithmic.py:61: in logsumexp
+    return LogSumExp(axes=axes)(a)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+        a          = needle.Tensor([[[-0.64573014 -0.18989763]
+  [ 0.06425801  1.6373779 ]
+  [-0.77092874 -0.8805883 ]]
+
+ [[-2.1338394  -0.... ]
+  [ 0.5479147  -1.2947313 ]]
+
+ [[-0.33982575 -1.4803531 ]
+  [ 0.22382198  0.6902278 ]
+  [ 0.146406    0.6197508 ]]])
+        axes       = 1
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[-0.64573014 -0.18989763]
+  [ 0.06425801  1.6373779 ]
+  [-0.77092874 -0.8805883 ]]
+
+ [[-2.1338394  -0...
+  [ 0.5479147  -1.2947313 ]]
+
+ [[-0.33982575 -1.4803531 ]
+  [ 0.22382198  0.6902278 ]
+  [ 0.146406    0.6197508 ]]]),)
+        self       = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bad4a10>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.Tensor([[[-0.64573014 -0.18989763]
+  [ 0.06425801  1.6373779 ]
+  [-0.77092874 -0.8805883 ]]
+
+ [[-2.1338394  -0...
+  [ 0.5479147  -1.2947313 ]]
+
+ [[-0.33982575 -1.4803531 ]
+  [ 0.22382198  0.6902278 ]
+  [ 0.146406    0.6197508 ]]]),)
+        op         = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bad4a10>
+        tensor     = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'max'") raised in repr()] Tensor object at 0x7d003bad4d10>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'max'") raised in repr()] Tensor object at 0x7d003bad4d10>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bad4a10>
+Z = NDArray([[[-0.64573014 -0.18989763]
+  [ 0.06425801  1.6373779 ]
+  [-0.77092874 -0.8805883 ]]
+
+ [[-2.1338394  -0.162731...47  -1.2947313 ]]
+
+ [[-0.33982575 -1.4803531 ]
+  [ 0.22382198  0.6902278 ]
+  [ 0.146406    0.6197508 ]]], device=cpu())
+
+    def compute(self, Z: NDArray) -> NDArray:
+        ### BEGIN YOUR SOLUTION
+>       maxz = array_api.max(Z, axis=self.axes, keepdims=True)
+               ^^^^^^^^^^^^^
+E       AttributeError: module 'needle.backend_ndarray' has no attribute 'max'
+
+Z          = NDArray([[[-0.64573014 -0.18989763]
+  [ 0.06425801  1.6373779 ]
+  [-0.77092874 -0.8805883 ]]
+
+ [[-2.1338394  -0.162731...47  -1.2947313 ]]
+
+ [[-0.33982575 -1.4803531 ]
+  [ 0.22382198  0.6902278 ]
+  [ 0.146406    0.6197508 ]]], device=cpu())
+self       = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bad4a10>
+
+python/needle/ops/ops_logarithmic.py:40: AttributeError
+_________________________ test_logsumexp[cpu-shape3-2] _________________________
+
+shape = (8, 3, 2), axes = 2, device = cpu()
+
+    @pytest.mark.parametrize("shape, axes", SUMMATION_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_logsumexp(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+        A_t = torch.Tensor(_A)
+        if axes is None:
+            t_axes = tuple(list(range(len(shape))))
+        else:
+            t_axes = axes
+>       np.testing.assert_allclose(torch.logsumexp(A_t, dim=t_axes).numpy(), ndl.logsumexp(A, axes=axes).numpy(), atol=1e-5, rtol=1e-5)
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = needle.Tensor([[[-0.41739646  1.1505585 ]
+  [ 1.3620341  -1.1808528 ]
+  [-1.1866927   0.7174831 ]]
+
+ [[-0.64722466 -0.... ]
+  [ 0.27359074  0.8715183 ]]
+
+ [[ 2.0846891  -0.77134025]
+  [ 1.0184602   1.699401  ]
+  [ 0.53261983  0.03025856]]])
+A_t        = tensor([[[-0.4174,  1.1506],
+         [ 1.3620, -1.1809],
+         [-1.1867,  0.7175]],
+
+        [[-0.6472, -0.2910],
+...         [ 0.2736,  0.8715]],
+
+        [[ 2.0847, -0.7713],
+         [ 1.0185,  1.6994],
+         [ 0.5326,  0.0303]]])
+_A         = array([[[-0.41739646,  1.1505585 ],
+        [ 1.3620341 , -1.1808528 ],
+        [-1.1866927 ,  0.7174831 ]],
+
+       [...  [[ 2.0846891 , -0.77134025],
+        [ 1.0184602 ,  1.699401  ],
+        [ 0.53261983,  0.03025856]]], dtype=float32)
+axes       = 2
+device     = cpu()
+shape      = (8, 3, 2)
+t_axes     = 2
+
+tests/hw4/test_nd_backend.py:239: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_logarithmic.py:61: in logsumexp
+    return LogSumExp(axes=axes)(a)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+        a          = needle.Tensor([[[-0.41739646  1.1505585 ]
+  [ 1.3620341  -1.1808528 ]
+  [-1.1866927   0.7174831 ]]
+
+ [[-0.64722466 -0.... ]
+  [ 0.27359074  0.8715183 ]]
+
+ [[ 2.0846891  -0.77134025]
+  [ 1.0184602   1.699401  ]
+  [ 0.53261983  0.03025856]]])
+        axes       = 2
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[-0.41739646  1.1505585 ]
+  [ 1.3620341  -1.1808528 ]
+  [-1.1866927   0.7174831 ]]
+
+ [[-0.64722466 -0...
+  [ 0.27359074  0.8715183 ]]
+
+ [[ 2.0846891  -0.77134025]
+  [ 1.0184602   1.699401  ]
+  [ 0.53261983  0.03025856]]]),)
+        self       = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bad65a0>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.Tensor([[[-0.41739646  1.1505585 ]
+  [ 1.3620341  -1.1808528 ]
+  [-1.1866927   0.7174831 ]]
+
+ [[-0.64722466 -0...
+  [ 0.27359074  0.8715183 ]]
+
+ [[ 2.0846891  -0.77134025]
+  [ 1.0184602   1.699401  ]
+  [ 0.53261983  0.03025856]]]),)
+        op         = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bad65a0>
+        tensor     = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'max'") raised in repr()] Tensor object at 0x7d003bad4590>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'max'") raised in repr()] Tensor object at 0x7d003bad4590>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bad65a0>
+Z = NDArray([[[-0.41739646  1.1505585 ]
+  [ 1.3620341  -1.1808528 ]
+  [-1.1866927   0.7174831 ]]
+
+ [[-0.64722466 -0.291011...074  0.8715183 ]]
+
+ [[ 2.0846891  -0.77134025]
+  [ 1.0184602   1.699401  ]
+  [ 0.53261983  0.03025856]]], device=cpu())
+
+    def compute(self, Z: NDArray) -> NDArray:
+        ### BEGIN YOUR SOLUTION
+>       maxz = array_api.max(Z, axis=self.axes, keepdims=True)
+               ^^^^^^^^^^^^^
+E       AttributeError: module 'needle.backend_ndarray' has no attribute 'max'
+
+Z          = NDArray([[[-0.41739646  1.1505585 ]
+  [ 1.3620341  -1.1808528 ]
+  [-1.1866927   0.7174831 ]]
+
+ [[-0.64722466 -0.291011...074  0.8715183 ]]
+
+ [[ 2.0846891  -0.77134025]
+  [ 1.0184602   1.699401  ]
+  [ 0.53261983  0.03025856]]], device=cpu())
+self       = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bad65a0>
+
+python/needle/ops/ops_logarithmic.py:40: AttributeError
+_______________________ test_logsumexp[cuda-shape0-None] _______________________
+
+shape = (1, 1, 1), axes = None, device = cuda()
+
+    @pytest.mark.parametrize("shape, axes", SUMMATION_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_logsumexp(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+        A_t = torch.Tensor(_A)
+        if axes is None:
+            t_axes = tuple(list(range(len(shape))))
+        else:
+            t_axes = axes
+>       np.testing.assert_allclose(torch.logsumexp(A_t, dim=t_axes).numpy(), ndl.logsumexp(A, axes=axes).numpy(), atol=1e-5, rtol=1e-5)
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = needle.Tensor([[[-0.45871726]]])
+A_t        = tensor([[[-0.4587]]])
+_A         = array([[[-0.45871726]]], dtype=float32)
+axes       = None
+device     = cuda()
+shape      = (1, 1, 1)
+t_axes     = (0, 1, 2)
+
+tests/hw4/test_nd_backend.py:239: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_logarithmic.py:61: in logsumexp
+    return LogSumExp(axes=axes)(a)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+        a          = needle.Tensor([[[-0.45871726]]])
+        axes       = None
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[-0.45871726]]]),)
+        self       = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bab76b0>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.Tensor([[[-0.45871726]]]),)
+        op         = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bab76b0>
+        tensor     = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'max'") raised in repr()] Tensor object at 0x7d003bab4a40>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'max'") raised in repr()] Tensor object at 0x7d003bab4a40>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bab76b0>
+Z = NDArray([[[-0.45871726]]], device=cuda())
+
+    def compute(self, Z: NDArray) -> NDArray:
+        ### BEGIN YOUR SOLUTION
+>       maxz = array_api.max(Z, axis=self.axes, keepdims=True)
+               ^^^^^^^^^^^^^
+E       AttributeError: module 'needle.backend_ndarray' has no attribute 'max'
+
+Z          = NDArray([[[-0.45871726]]], device=cuda())
+self       = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bab76b0>
+
+python/needle/ops/ops_logarithmic.py:40: AttributeError
+________________________ test_logsumexp[cuda-shape1-0] _________________________
+
+shape = (5, 3), axes = 0, device = cuda()
+
+    @pytest.mark.parametrize("shape, axes", SUMMATION_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_logsumexp(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+        A_t = torch.Tensor(_A)
+        if axes is None:
+            t_axes = tuple(list(range(len(shape))))
+        else:
+            t_axes = axes
+>       np.testing.assert_allclose(torch.logsumexp(A_t, dim=t_axes).numpy(), ndl.logsumexp(A, axes=axes).numpy(), atol=1e-5, rtol=1e-5)
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = needle.Tensor([[ 2.1940093e-01  2.1155696e-01  1.1876984e+00]
+ [ 8.6819392e-01  8.1103557e-04  2.2586522e-01]
+ [ 6.848...1e+00 -2.7298880e+00]
+ [-8.9583379e-01 -7.6962298e-01  1.6293789e-01]
+ [ 8.8077790e-01 -3.2713804e-01 -8.3769453e-01]])
+A_t        = tensor([[ 2.1940e-01,  2.1156e-01,  1.1877e+00],
+        [ 8.6819e-01,  8.1104e-04,  2.2587e-01],
+        [ 6.8488e-01...5e+00, -2.7299e+00],
+        [-8.9583e-01, -7.6962e-01,  1.6294e-01],
+        [ 8.8078e-01, -3.2714e-01, -8.3769e-01]])
+_A         = array([[ 2.1940093e-01,  2.1155696e-01,  1.1876984e+00],
+       [ 8.6819392e-01,  8.1103557e-04,  2.2586522e-01],
+    ....9583379e-01, -7.6962298e-01,  1.6293789e-01],
+       [ 8.8077790e-01, -3.2713804e-01, -8.3769453e-01]], dtype=float32)
+axes       = 0
+device     = cuda()
+shape      = (5, 3)
+t_axes     = 0
+
+tests/hw4/test_nd_backend.py:239: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_logarithmic.py:61: in logsumexp
+    return LogSumExp(axes=axes)(a)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+        a          = needle.Tensor([[ 2.1940093e-01  2.1155696e-01  1.1876984e+00]
+ [ 8.6819392e-01  8.1103557e-04  2.2586522e-01]
+ [ 6.848...1e+00 -2.7298880e+00]
+ [-8.9583379e-01 -7.6962298e-01  1.6293789e-01]
+ [ 8.8077790e-01 -3.2713804e-01 -8.3769453e-01]])
+        axes       = 0
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[ 2.1940093e-01  2.1155696e-01  1.1876984e+00]
+ [ 8.6819392e-01  8.1103557e-04  2.2586522e-01]
+ [ 6.84...+00 -2.7298880e+00]
+ [-8.9583379e-01 -7.6962298e-01  1.6293789e-01]
+ [ 8.8077790e-01 -3.2713804e-01 -8.3769453e-01]]),)
+        self       = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bad5970>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.Tensor([[ 2.1940093e-01  2.1155696e-01  1.1876984e+00]
+ [ 8.6819392e-01  8.1103557e-04  2.2586522e-01]
+ [ 6.84...+00 -2.7298880e+00]
+ [-8.9583379e-01 -7.6962298e-01  1.6293789e-01]
+ [ 8.8077790e-01 -3.2713804e-01 -8.3769453e-01]]),)
+        op         = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bad5970>
+        tensor     = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'max'") raised in repr()] Tensor object at 0x7d003bad5b20>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'max'") raised in repr()] Tensor object at 0x7d003bad5b20>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bad5970>
+Z = NDArray([[ 2.1940093e-01  2.1155696e-01  1.1876984e+00]
+ [ 8.6819392e-01  8.1103557e-04  2.2586522e-01]
+ [ 6.8488491e-...0e+00]
+ [-8.9583379e-01 -7.6962298e-01  1.6293789e-01]
+ [ 8.8077790e-01 -3.2713804e-01 -8.3769453e-01]], device=cuda())
+
+    def compute(self, Z: NDArray) -> NDArray:
+        ### BEGIN YOUR SOLUTION
+>       maxz = array_api.max(Z, axis=self.axes, keepdims=True)
+               ^^^^^^^^^^^^^
+E       AttributeError: module 'needle.backend_ndarray' has no attribute 'max'
+
+Z          = NDArray([[ 2.1940093e-01  2.1155696e-01  1.1876984e+00]
+ [ 8.6819392e-01  8.1103557e-04  2.2586522e-01]
+ [ 6.8488491e-...0e+00]
+ [-8.9583379e-01 -7.6962298e-01  1.6293789e-01]
+ [ 8.8077790e-01 -3.2713804e-01 -8.3769453e-01]], device=cuda())
+self       = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bad5970>
+
+python/needle/ops/ops_logarithmic.py:40: AttributeError
+________________________ test_logsumexp[cuda-shape2-1] _________________________
+
+shape = (8, 3, 2), axes = 1, device = cuda()
+
+    @pytest.mark.parametrize("shape, axes", SUMMATION_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_logsumexp(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+        A_t = torch.Tensor(_A)
+        if axes is None:
+            t_axes = tuple(list(range(len(shape))))
+        else:
+            t_axes = axes
+>       np.testing.assert_allclose(torch.logsumexp(A_t, dim=t_axes).numpy(), ndl.logsumexp(A, axes=axes).numpy(), atol=1e-5, rtol=1e-5)
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = needle.Tensor([[[-0.9397055   1.6032794 ]
+  [ 1.4387522  -0.85600376]
+  [ 0.42110795 -1.9550894 ]]
+
+ [[ 1.8886433  -1....6]
+  [-0.06918286  0.88816154]]
+
+ [[-0.3923111   0.65810174]
+  [-1.7375134  -0.14040655]
+  [-0.09061285  0.91081566]]])
+A_t        = tensor([[[-0.9397,  1.6033],
+         [ 1.4388, -0.8560],
+         [ 0.4211, -1.9551]],
+
+        [[ 1.8886, -1.2960],
+...         [-0.0692,  0.8882]],
+
+        [[-0.3923,  0.6581],
+         [-1.7375, -0.1404],
+         [-0.0906,  0.9108]]])
+_A         = array([[[-0.9397055 ,  1.6032794 ],
+        [ 1.4387522 , -0.85600376],
+        [ 0.42110795, -1.9550894 ]],
+
+       [...  [[-0.3923111 ,  0.65810174],
+        [-1.7375134 , -0.14040655],
+        [-0.09061285,  0.91081566]]], dtype=float32)
+axes       = 1
+device     = cuda()
+shape      = (8, 3, 2)
+t_axes     = 1
+
+tests/hw4/test_nd_backend.py:239: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_logarithmic.py:61: in logsumexp
+    return LogSumExp(axes=axes)(a)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+        a          = needle.Tensor([[[-0.9397055   1.6032794 ]
+  [ 1.4387522  -0.85600376]
+  [ 0.42110795 -1.9550894 ]]
+
+ [[ 1.8886433  -1....6]
+  [-0.06918286  0.88816154]]
+
+ [[-0.3923111   0.65810174]
+  [-1.7375134  -0.14040655]
+  [-0.09061285  0.91081566]]])
+        axes       = 1
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[-0.9397055   1.6032794 ]
+  [ 1.4387522  -0.85600376]
+  [ 0.42110795 -1.9550894 ]]
+
+ [[ 1.8886433  -1...
+  [-0.06918286  0.88816154]]
+
+ [[-0.3923111   0.65810174]
+  [-1.7375134  -0.14040655]
+  [-0.09061285  0.91081566]]]),)
+        self       = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bad7cb0>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.Tensor([[[-0.9397055   1.6032794 ]
+  [ 1.4387522  -0.85600376]
+  [ 0.42110795 -1.9550894 ]]
+
+ [[ 1.8886433  -1...
+  [-0.06918286  0.88816154]]
+
+ [[-0.3923111   0.65810174]
+  [-1.7375134  -0.14040655]
+  [-0.09061285  0.91081566]]]),)
+        op         = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bad7cb0>
+        tensor     = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'max'") raised in repr()] Tensor object at 0x7d003bad7830>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'max'") raised in repr()] Tensor object at 0x7d003bad7830>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bad7cb0>
+Z = NDArray([[[-0.9397055   1.6032794 ]
+  [ 1.4387522  -0.85600376]
+  [ 0.42110795 -1.9550894 ]]
+
+ [[ 1.8886433  -1.296007...86  0.88816154]]
+
+ [[-0.3923111   0.65810174]
+  [-1.7375134  -0.14040655]
+  [-0.09061285  0.91081566]]], device=cuda())
+
+    def compute(self, Z: NDArray) -> NDArray:
+        ### BEGIN YOUR SOLUTION
+>       maxz = array_api.max(Z, axis=self.axes, keepdims=True)
+               ^^^^^^^^^^^^^
+E       AttributeError: module 'needle.backend_ndarray' has no attribute 'max'
+
+Z          = NDArray([[[-0.9397055   1.6032794 ]
+  [ 1.4387522  -0.85600376]
+  [ 0.42110795 -1.9550894 ]]
+
+ [[ 1.8886433  -1.296007...86  0.88816154]]
+
+ [[-0.3923111   0.65810174]
+  [-1.7375134  -0.14040655]
+  [-0.09061285  0.91081566]]], device=cuda())
+self       = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bad7cb0>
+
+python/needle/ops/ops_logarithmic.py:40: AttributeError
+________________________ test_logsumexp[cuda-shape3-2] _________________________
+
+shape = (8, 3, 2), axes = 2, device = cuda()
+
+    @pytest.mark.parametrize("shape, axes", SUMMATION_PARAMETERS)
+    @pytest.mark.parametrize("device", _DEVICES, ids=["cpu", "cuda"])
+    def test_logsumexp(shape, axes, device):
+        _A = np.random.randn(*shape).astype(np.float32)
+        A = ndl.Tensor(nd.array(_A), device=device)
+        A_t = torch.Tensor(_A)
+        if axes is None:
+            t_axes = tuple(list(range(len(shape))))
+        else:
+            t_axes = axes
+>       np.testing.assert_allclose(torch.logsumexp(A_t, dim=t_axes).numpy(), ndl.logsumexp(A, axes=axes).numpy(), atol=1e-5, rtol=1e-5)
+                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+A          = needle.Tensor([[[ 0.42649978  0.55792385]
+  [ 0.32932186  0.4249462 ]
+  [-0.49092507 -0.12920508]]
+
+ [[ 0.3461196  -1....8]
+  [ 1.1119847   0.9884341 ]]
+
+ [[-0.05336624  0.08052945]
+  [ 0.53987354  0.25176743]
+  [-0.7686626   0.12419878]]])
+A_t        = tensor([[[ 0.4265,  0.5579],
+         [ 0.3293,  0.4249],
+         [-0.4909, -0.1292]],
+
+        [[ 0.3461, -1.4637],
+...         [ 1.1120,  0.9884]],
+
+        [[-0.0534,  0.0805],
+         [ 0.5399,  0.2518],
+         [-0.7687,  0.1242]]])
+_A         = array([[[ 0.42649978,  0.55792385],
+        [ 0.32932186,  0.4249462 ],
+        [-0.49092507, -0.12920508]],
+
+       [...  [[-0.05336624,  0.08052945],
+        [ 0.53987354,  0.25176743],
+        [-0.7686626 ,  0.12419878]]], dtype=float32)
+axes       = 2
+device     = cuda()
+shape      = (8, 3, 2)
+t_axes     = 2
+
+tests/hw4/test_nd_backend.py:239: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+python/needle/ops/ops_logarithmic.py:61: in logsumexp
+    return LogSumExp(axes=axes)(a)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+        a          = needle.Tensor([[[ 0.42649978  0.55792385]
+  [ 0.32932186  0.4249462 ]
+  [-0.49092507 -0.12920508]]
+
+ [[ 0.3461196  -1....8]
+  [ 1.1119847   0.9884341 ]]
+
+ [[-0.05336624  0.08052945]
+  [ 0.53987354  0.25176743]
+  [-0.7686626   0.12419878]]])
+        axes       = 2
+python/needle/autograd.py:80: in __call__
+    return Tensor.make_from_op(self, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        args       = (needle.Tensor([[[ 0.42649978  0.55792385]
+  [ 0.32932186  0.4249462 ]
+  [-0.49092507 -0.12920508]]
+
+ [[ 0.3461196  -1...
+  [ 1.1119847   0.9884341 ]]
+
+ [[-0.05336624  0.08052945]
+  [ 0.53987354  0.25176743]
+  [-0.7686626   0.12419878]]]),)
+        self       = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bad6ab0>
+python/needle/autograd.py:242: in make_from_op
+    tensor.realize_cached_data()
+        inputs     = (needle.Tensor([[[ 0.42649978  0.55792385]
+  [ 0.32932186  0.4249462 ]
+  [-0.49092507 -0.12920508]]
+
+ [[ 0.3461196  -1...
+  [ 1.1119847   0.9884341 ]]
+
+ [[-0.05336624  0.08052945]
+  [ 0.53987354  0.25176743]
+  [-0.7686626   0.12419878]]]),)
+        op         = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bad6ab0>
+        tensor     = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'max'") raised in repr()] Tensor object at 0x7d003bad6c90>
+python/needle/autograd.py:107: in realize_cached_data
+    self.cached_data = self.op.compute(
+        self       = <[AttributeError("module 'needle.backend_ndarray' has no attribute 'max'") raised in repr()] Tensor object at 0x7d003bad6c90>
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bad6ab0>
+Z = NDArray([[[ 0.42649978  0.55792385]
+  [ 0.32932186  0.4249462 ]
+  [-0.49092507 -0.12920508]]
+
+ [[ 0.3461196  -1.463666...7   0.9884341 ]]
+
+ [[-0.05336624  0.08052945]
+  [ 0.53987354  0.25176743]
+  [-0.7686626   0.12419878]]], device=cuda())
+
+    def compute(self, Z: NDArray) -> NDArray:
+        ### BEGIN YOUR SOLUTION
+>       maxz = array_api.max(Z, axis=self.axes, keepdims=True)
+               ^^^^^^^^^^^^^
+E       AttributeError: module 'needle.backend_ndarray' has no attribute 'max'
+
+Z          = NDArray([[[ 0.42649978  0.55792385]
+  [ 0.32932186  0.4249462 ]
+  [-0.49092507 -0.12920508]]
+
+ [[ 0.3461196  -1.463666...7   0.9884341 ]]
+
+ [[-0.05336624  0.08052945]
+  [ 0.53987354  0.25176743]
+  [-0.7686626   0.12419878]]], device=cuda())
+self       = <needle.ops.ops_logarithmic.LogSumExp object at 0x7d003bad6ab0>
+
+python/needle/ops/ops_logarithmic.py:40: AttributeError
+=========================== short test summary info ============================
+FAILED tests/hw4/test_nd_backend.py::test_tanh_backward[cpu-shape0] - TypeErr...
+FAILED tests/hw4/test_nd_backend.py::test_tanh_backward[cpu-shape1] - TypeErr...
+FAILED tests/hw4/test_nd_backend.py::test_tanh_backward[cuda-shape0] - TypeEr...
+FAILED tests/hw4/test_nd_backend.py::test_tanh_backward[cuda-shape1] - TypeEr...
+FAILED tests/hw4/test_nd_backend.py::test_stack[cpu-shape0-0-1] - AssertionEr...
+FAILED tests/hw4/test_nd_backend.py::test_stack[cpu-shape1-0-2] - AssertionEr...
+FAILED tests/hw4/test_nd_backend.py::test_stack[cpu-shape2-2-5] - AssertionEr...
+FAILED tests/hw4/test_nd_backend.py::test_stack[cuda-shape0-0-1] - AssertionE...
+FAILED tests/hw4/test_nd_backend.py::test_stack[cuda-shape1-0-2] - AssertionE...
+FAILED tests/hw4/test_nd_backend.py::test_stack[cuda-shape2-2-5] - AssertionE...
+FAILED tests/hw4/test_nd_backend.py::test_stack_backward[cpu-shape0-0-1] - As...
+FAILED tests/hw4/test_nd_backend.py::test_stack_backward[cpu-shape1-0-2] - As...
+FAILED tests/hw4/test_nd_backend.py::test_stack_backward[cpu-shape2-2-5] - As...
+FAILED tests/hw4/test_nd_backend.py::test_stack_backward[cuda-shape0-0-1] - A...
+FAILED tests/hw4/test_nd_backend.py::test_stack_backward[cuda-shape1-0-2] - A...
+FAILED tests/hw4/test_nd_backend.py::test_stack_backward[cuda-shape2-2-5] - A...
+FAILED tests/hw4/test_nd_backend.py::test_summation_backward[cpu-shape1-0] - ...
+FAILED tests/hw4/test_nd_backend.py::test_summation_backward[cpu-shape2-1] - ...
+FAILED tests/hw4/test_nd_backend.py::test_summation_backward[cpu-shape3-2] - ...
+FAILED tests/hw4/test_nd_backend.py::test_summation_backward[cuda-shape1-0]
+FAILED tests/hw4/test_nd_backend.py::test_summation_backward[cuda-shape2-1]
+FAILED tests/hw4/test_nd_backend.py::test_summation_backward[cuda-shape3-2]
+FAILED tests/hw4/test_nd_backend.py::test_transpose[cpu-axes0-shape0] - Attri...
+FAILED tests/hw4/test_nd_backend.py::test_transpose[cpu-axes0-shape1] - Attri...
+FAILED tests/hw4/test_nd_backend.py::test_transpose[cpu-axes1-shape0] - Attri...
+FAILED tests/hw4/test_nd_backend.py::test_transpose[cpu-axes1-shape1] - Attri...
+FAILED tests/hw4/test_nd_backend.py::test_transpose[cpu-None-shape0] - Attrib...
+FAILED tests/hw4/test_nd_backend.py::test_transpose[cpu-None-shape1] - Attrib...
+FAILED tests/hw4/test_nd_backend.py::test_transpose[cuda-axes0-shape0] - Attr...
+FAILED tests/hw4/test_nd_backend.py::test_transpose[cuda-axes0-shape1] - Attr...
+FAILED tests/hw4/test_nd_backend.py::test_transpose[cuda-axes1-shape0] - Attr...
+FAILED tests/hw4/test_nd_backend.py::test_transpose[cuda-axes1-shape1] - Attr...
+FAILED tests/hw4/test_nd_backend.py::test_transpose[cuda-None-shape0] - Attri...
+FAILED tests/hw4/test_nd_backend.py::test_transpose[cuda-None-shape1] - Attri...
+FAILED tests/hw4/test_nd_backend.py::test_logsumexp[cpu-shape0-None] - Attrib...
+FAILED tests/hw4/test_nd_backend.py::test_logsumexp[cpu-shape1-0] - Attribute...
+FAILED tests/hw4/test_nd_backend.py::test_logsumexp[cpu-shape2-1] - Attribute...
+FAILED tests/hw4/test_nd_backend.py::test_logsumexp[cpu-shape3-2] - Attribute...
+FAILED tests/hw4/test_nd_backend.py::test_logsumexp[cuda-shape0-None] - Attri...
+FAILED tests/hw4/test_nd_backend.py::test_logsumexp[cuda-shape1-0] - Attribut...
+FAILED tests/hw4/test_nd_backend.py::test_logsumexp[cuda-shape2-1] - Attribut...
+FAILED tests/hw4/test_nd_backend.py::test_logsumexp[cuda-shape3-2] - Attribut...
+================ 42 failed, 76 passed, 1685 deselected in 5.45s ================
