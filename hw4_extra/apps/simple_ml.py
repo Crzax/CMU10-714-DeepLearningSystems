@@ -189,7 +189,7 @@ def epoch_general_ptb(data, model, seq_len=40, loss_fn=nn.SoftmaxLoss(), opt=Non
         model.train()
     else:
         model.eval()
-
+    import gc
     h = None
     for i in range(0, nbatch - 1, seq_len):
         X, y = ndl.data.get_batch(data, i, seq_len, device=device, dtype=dtype)
@@ -215,7 +215,8 @@ def epoch_general_ptb(data, model, seq_len=40, loss_fn=nn.SoftmaxLoss(), opt=Non
 
         avg_loss += loss.numpy() * batch_cnt
         avg_acc += np.sum(logits.numpy().argmax(axis=1) == y.numpy())
-
+        del logits, loss, X, y,
+        gc.collect()
     return avg_acc/total_samples, avg_loss/total_samples
     ### END YOUR SOLUTION
 
