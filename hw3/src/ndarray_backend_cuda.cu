@@ -557,9 +557,7 @@ __global__ void MatmulKernel(const scalar_t* a, const scalar_t* b, scalar_t* out
 void Matmul(const CudaArray& a, const CudaArray& b, CudaArray* out, 
             uint32_t M, uint32_t N, uint32_t P) {
   dim3 block(L, L, 1);
-  dim3 grid((M + L * TILE-1)/(L*TILE),
-        (P+L*TILE-1)/(L*TILE),
-        1);
+  dim3 grid((P + L * TILE-1)/(L*TILE), (M+L*TILE-1)/(L*TILE), 1);
   MatmulKernel<<<grid,block>>>(a.ptr,b.ptr,out->ptr,M,N,P);
 }
 

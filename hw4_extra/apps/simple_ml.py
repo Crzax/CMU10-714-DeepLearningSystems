@@ -215,8 +215,10 @@ def epoch_general_ptb(data, model, seq_len=40, loss_fn=nn.SoftmaxLoss(), opt=Non
 
         avg_loss += loss.numpy() * batch_cnt
         avg_acc += np.sum(logits.numpy().argmax(axis=1) == y.numpy())
-        del logits, loss, X, y,
+        del logits, loss, X, y
         gc.collect()
+    del h
+    gc.collect()
     return avg_acc/total_samples, avg_loss/total_samples
     ### END YOUR SOLUTION
 
